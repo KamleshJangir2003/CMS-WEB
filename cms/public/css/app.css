@@ -1,0 +1,79 @@
+/* ================================
+   ADMIN DASHBOARD UI (KUBER STYLE)
+================================ */
+
+/* Stat Cards */
+.dashboard-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: all .3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.dashboard-card h6 {
+    font-size: 14px;
+    opacity: .9;
+    margin-bottom: 6px;
+}
+
+.dashboard-card h2 {
+    font-weight: 700;
+    margin: 0;
+}
+
+.dashboard-card i {
+    font-size: 38px;
+    opacity: .25;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #396afc, #2948ff);
+}
+
+/* Table Improvements */
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    background: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.table thead th {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 6px;
+}

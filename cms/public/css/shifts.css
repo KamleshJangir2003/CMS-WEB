@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-gray: #f5f7fa;
+    --dark-gray: #7f8c8d;
+    --success-color: #27ae60;
+}
+
+.shifts-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.shifts-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.shifts-header h1 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.shifts-header .subtitle {
+    color: #ecf0f1;
+    font-size: 0.9rem;
+}
+
+.shifts-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.shifts-card:hover {
+    transform: translateY(-5px);
+}
+
+.shifts-card-header {
+    background-color: white;
+    border-bottom: 2px solid var(--light-gray);
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.shifts-table {
+    margin-bottom: 0;
+}
+
+.shifts-table thead {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.shifts-table th {
+    border: none;
+    padding: 15px 12px;
+    font-weight: 600;
+}
+
+.shifts-table td {
+    padding: 12px;
+    vertical-align: middle;
+    border-color: #f1f1f1;
+}
+
+.shifts-table tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.scheduled {
+    background-color: #d5f4e6;
+    color: #27ae60;
+}
+
+.completed {
+    background-color: #e8f4fc;
+    color: #3498db;
+}
+
+.cancelled {
+    background-color: #fde8e8;
+    color: #e74c3c;
+}
+
+.shifts-action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.shifts-action-btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.shifts-edit-btn {
+    background-color: #3498db;
+}
+
+.shifts-delete-btn {
+    background-color: #e74c3c;
+}
+
+.shifts-view-btn {
+    background-color: #9b59b6;
+}
+
+.shifts-footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 10px 10px;
+}
+
+.shift-day {
+    color: #f39c12;
+    font-weight: 600;
+}
+
+.shift-night {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.shifts-form-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.shifts-section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.shifts-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--success-color);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: none;
+    z-index: 1000;
+    max-width: 300px;
+}
+
+.shifts-search-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.shifts-table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+    .shifts-action-buttons {
+        flex-direction: column;
+    }
+    
+    .shifts-action-btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
