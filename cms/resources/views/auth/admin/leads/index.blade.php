@@ -25,7 +25,7 @@
             <span class="btn-text">Upload Excel</span>
             <span class="btn-loading" style="display: none;">Uploading...</span>
         </button>
-        <small class="text-muted">Excel format: Column A = Number, Column B = Name (Max: 10MB)</small>
+        <small class="text-muted">Excel format: Column A = Number, Column B = Name, Column C = Role (Max: 10MB)</small>
     </form>
 </div>
 @endsection
@@ -55,8 +55,8 @@
                     <tbody>
                         @forelse($leads as $lead)
                         <tr>
-                            <td>{{ $lead->number }}</td>
-                            <td>{{ $lead->name }}</td>
+                            <td>{{ $lead->name ?? $lead->number }}</td>
+                            <td>{{ $lead->email ?? 'No Name' }}</td>
 
                             <td>
                                 <select class="status-select" data-id="{{ $lead->id }}">
@@ -65,6 +65,8 @@
                                     <option value="Picked" {{ $lead->condition_status == 'Picked' ? 'selected' : '' }}>Picked</option>
                                 </select>
                             </td>
+
+                            <td>{{ $lead->role ?? 'Unknown' }}</td>
 
                             <td>
                                 <a href="https://wa.me/91{{ $lead->number }}" target="_blank" class="whatsapp-btn">
@@ -80,7 +82,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="5" style="text-align:center;">No leads found</td>
+                            <td colspan="6" style="text-align:center;">No leads found</td>
                         </tr>
                         @endforelse
                     </tbody>

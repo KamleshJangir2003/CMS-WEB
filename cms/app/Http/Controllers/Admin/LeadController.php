@@ -12,13 +12,7 @@ class LeadController extends Controller
 {
     public function index()
     {
-        // Data ko sahi order mein get karo - number ke hisaab se ascending order
-        $leads = Lead::where('number', '!=', '')
-                    ->where('name', '!=', '')
-                    ->whereNotNull('number')
-                    ->whereNotNull('name')
-                    ->orderBy('id', 'desc')
-                    ->get();
+        $leads = Lead::orderBy('id', 'desc')->get();
         return view('auth.admin.leads.index', compact('leads'));
     }
 
@@ -90,9 +84,10 @@ class LeadController extends Controller
             foreach ($rows as $index => $row) {
                 if ($index === 1) continue; // Skip header (1-based index)
 
-                // Column A (number) aur column B (name) ko read karo
+                // Column A (number), column B (name), column C (role) ko read karo
                 $number = isset($row['A']) ? trim($row['A']) : '';
                 $name = isset($row['B']) ? trim($row['B']) : '';
+                $role = isset($row['C']) ? trim($row['C']) : 'Unknown';
 
                 // Empty rows skip karo
                 if (empty($number) && empty($name)) {
@@ -126,7 +121,7 @@ class LeadController extends Controller
                     Lead::create([
                         'number' => $number,
                         'name' => $name,
-                        'role' => 'Unknown', // Default role
+                        'role' => $role,
                         'condition_status' => 'Not Interested'
                     ]);
                     $imported++;
