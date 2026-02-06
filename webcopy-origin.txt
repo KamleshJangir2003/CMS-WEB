@@ -1,0 +1,1660 @@
+Uri: https://fonts.googleapis.com/css2?family=Marcellus&display=swap
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\css2-1
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/marcellus/v14/wEO_EBrOk8hQLDvIAF8FUQ.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\s\marcellus\v14\wEO_EBrOk8hQLDvIAF8FUQ.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj42Vksj.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\s\spacegrotesk\v22\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj42Vksj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\s\spacegrotesk\v22\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj62UUsj.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\s\spacegrotesk\v22\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj62UUsj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUUsj.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\s\spacegrotesk\v22\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUUsj.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\s\spacegrotesk\v22\V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf
+Content Type: font/ttf
+
+Uri: https://php.kitmama.top/techguru/404.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\404.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/about.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\about.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/advanced-technology.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\advanced-technology.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/assets/css/animate.min.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\animate.min.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/aos.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\aos.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/bootstrap.min.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\bootstrap.min.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/custom-animate.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\custom-animate.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/flaticon.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\flaticon.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/font-awesome-all.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\font-awesome-all.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/jarallax.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\jarallax.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/jquery-ui.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\jquery-ui.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/jquery.magnific-popup.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\jquery.magnific-popup.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/about.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\about.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/banner.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\banner.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/blog.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\blog.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/brand.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\brand.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/coming-soon.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\coming-soon.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/contact.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\contact.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/counter.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\counter.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/cta.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\cta.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/error.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\error.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/event.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\event.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/faq.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\faq.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/feature.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\feature.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/footer.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\footer.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/gallery.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\gallery.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/google-map.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\google-map.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/newsletter.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\newsletter.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/page-header.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\page-header.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/portfolio.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\portfolio.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/pricing.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\pricing.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/process.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\process.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/services.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\services.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/shop.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\shop.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/skill.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\skill.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/slider.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\slider.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/sliding-text.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\sliding-text.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/team.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\team.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/testimonial.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\testimonial.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/module-css/why-choose.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\module-css\why-choose.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/nice-select.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\nice-select.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/odometer.min.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\odometer.min.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/owl.carousel.min.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\owl.carousel.min.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/owl.theme.default.min.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\owl.theme.default.min.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/responsive.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\responsive.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/style.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\style.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/swiper.min.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\swiper.min.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/css/twentytwenty.css
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\css\twentytwenty.css
+Content Type: text/css
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-brands-400.eot
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-brands-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-brands-400.eot?
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-brands-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-brands-400.ttf
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-brands-400.ttf
+Content Type: font/ttf
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-brands-400.woff
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-brands-400.woff
+Content Type: font/woff
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-brands-400.woff2
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-brands-400.woff2
+Content Type: font/woff2
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-light-300.woff
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-light-300.woff
+Content Type: font/woff
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-light-300.woff2
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-light-300.woff2
+Content Type: font/woff2
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-regular-400.eot
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-regular-400.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-regular-400.eot?
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-regular-400-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-regular-400.woff
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-regular-400.woff
+Content Type: font/woff
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-regular-400.woff2
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-regular-400.woff2
+Content Type: font/woff2
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-solid-900.woff
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-solid-900.woff
+Content Type: font/woff
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/fa-solid-900.woff2
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\fa-solid-900.woff2
+Content Type: font/woff2
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/icomoon.eot?orkqwr
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\icomoon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/icomoon.svg?orkqwr
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\icomoon.svg
+Content Type: image/svg+xml
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/icomoon.ttf?orkqwr
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\icomoon.ttf
+Content Type: font/ttf
+
+Uri: https://php.kitmama.top/techguru/assets/fonts/icomoon.woff?orkqwr
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\fonts\icomoon.woff
+Content Type: font/woff
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/banner-one-bg.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\banner-one-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/coming-soon-page-bg.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\coming-soon-page-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/contact-two-bg.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\contact-two-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/page-header-bg.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\page-header-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/process-two-bg.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\process-two-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/site-footer-top-bg.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\site-footer-top-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/slider-2-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\slider-2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/slider-2-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\slider-2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/slider-2-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\slider-2-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/backgrounds/testimonial-one-bg-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\backgrounds\testimonial-one-bg-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-1-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-1-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-1-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-1-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-2-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-2-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-2-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-2-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-2-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-2-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-img-box-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-img-box-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-img-box-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-img-box-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-next-image.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-next-image.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-points-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-points-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-prev-image.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-prev-image.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-details-user-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-details-user-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-user-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-user-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-user-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-user-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-user-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-user-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-list-user-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-list-user-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-lp-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-lp-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-lp-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-lp-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-lp-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-lp-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-one-user-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-one-user-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-one-user-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-one-user-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-one-user-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-one-user-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-one-user-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-one-user-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-6.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-6.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-7.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-7.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-8.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-8.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-1-9.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-1-9.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-6.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-6.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-7.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-7.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-8.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-8.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-page-user-9.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-page-user-9.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-two-user-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-two-user-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-two-user-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-two-user-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-two-user-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-two-user-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/blog-two-user-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\blog-two-user-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/comment-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\comment-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/comment-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\comment-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/comment-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\comment-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/blog/sidebar-client-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\blog\sidebar-client-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-1-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-1-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-1-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-1-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-1-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-1-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-1-4.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-1-4.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-1-5.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-1-5.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-one-img-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-one-img-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/brand/brand-one-img-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\brand\brand-one-img-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/favicons/apple-touch-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\favicons\apple-touch-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/favicons/favicon-16x16.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\favicons\favicon-16x16.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/favicons/favicon-32x32.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\favicons\favicon-32x32.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/favicons/site.webmanifest
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\favicons\site.webmanifest
+Content Type: application/octet-stream
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-6.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-6.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-7.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-7.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-8.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-8.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/gallery/gallery-page-1-9.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\gallery\gallery-page-1-9.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/home-showcase/home-showcase-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\home-showcase\home-showcase-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/home-showcase/home-showcase-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\home-showcase\home-showcase-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/home-showcase/home-showcase-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\home-showcase\home-showcase-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/cross-out.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\cross-out.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/icon-facebook.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\icon-facebook.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/icon-google-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\icon-google-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/main-slider-shield-check-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\main-slider-shield-check-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/main-slider-sub-title-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\main-slider-sub-title-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/portfolio-one-round-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\portfolio-one-round-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/pricing-icon-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\pricing-icon-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/quote.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\quote.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/services-four-qualified-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\services-four-qualified-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/services-two-round-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\services-two-round-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/star-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\star-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/icon/team-details-experience-icon.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\icon\team-details-experience-icon.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-1-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-1-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-1-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-1-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-1-6.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-1-6.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-2-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-2-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-2-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-2-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-2-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-2-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-details-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-details-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-details-img-box-2-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-details-img-box-2-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-details-img-box-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-details-img-box-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-details-img-box-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-details-img-box-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/project/portfolio-details-img-box-img-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\project\portfolio-details-img-box-img-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-four-client-img-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-four-client-img-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-four-client-img-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-four-client-img-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-four-client-img-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-four-client-img-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-four-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-four-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-four-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-four-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-four-points-list-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-four-points-list-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-one-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-one-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-three-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-three-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-two-client-img-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-two-client-img-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-two-client-img-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-two-client-img-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-two-client-img-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-two-client-img-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-two-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-two-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/about-two-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\about-two-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/banner-one-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\banner-one-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/error-page-img1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\error-page-img1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/event-one-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\event-one-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/faq-one-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\faq-one-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/feature-one-img-1-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\feature-one-img-1-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/feature-one-img-1-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\feature-one-img-1-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/feature-one-img-1-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\feature-one-img-1-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/footer-logo.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\footer-logo.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/logo-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\logo-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/logo-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\logo-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/main-slider-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\main-slider-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/main-slider-img-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\main-slider-img-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/main-slider-trustpilot-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\main-slider-trustpilot-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/main-slider-trustpilot-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\main-slider-trustpilot-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/main-slider-trustpilot-logo.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\main-slider-trustpilot-logo.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/newsletter-one-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\newsletter-one-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/skill-one-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\skill-one-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/trustpilot-logo.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\trustpilot-logo.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/why-choose-one-client-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\why-choose-one-client-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/why-choose-one-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\why-choose-one-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/why-choose-three-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\why-choose-three-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/resources/why-choose-two-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\resources\why-choose-two-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/section-title-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\section-title-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/servces-one-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\servces-one-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/servces-one-img-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\servces-one-img-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-2-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-2-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-2-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-2-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-2-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-2-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-bottom-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-bottom-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-6.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-6.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-box-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-box-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-img-box-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-img-box-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-details-need-help-img.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-details-need-help-img.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-four-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-four-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/services/services-four-img-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\services\services-four-img-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/about-four-bg-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\about-four-bg-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/about-four-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\about-four-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/about-two-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\about-two-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/banner-one-shape-bg.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\banner-one-shape-bg.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/blog-details-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\blog-details-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/contact-one-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\contact-one-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/contact-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\contact-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/counter-one-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\counter-one-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/counter-two-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\counter-two-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/cta-one-shape-bg.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\cta-one-shape-bg.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/cta-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\cta-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/cta-two-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\cta-two-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/event-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\event-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/event-one-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\event-one-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/faq-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\faq-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/faq-two-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\faq-two-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/feature-one-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\feature-one-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/main-slider-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\main-slider-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/main-slider-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\main-slider-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/main-slider-shape-4.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\main-slider-shape-4.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/main-slider-shape-5.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\main-slider-shape-5.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/main-slider-two-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\main-slider-two-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/main-slider-two-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\main-slider-two-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/newsletter-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\newsletter-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/newsletter-one-shape-bg.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\newsletter-one-shape-bg.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/newsletter-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\newsletter-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/newsletter-two-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\newsletter-two-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/portfolio-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\portfolio-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/portfolio-one-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\portfolio-one-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/portfolio-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\portfolio-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/pricing-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\pricing-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/pricing-two-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\pricing-two-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/pricing-two-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\pricing-two-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/pricing-two-single-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\pricing-two-single-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/pricing-two-single-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\pricing-two-single-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/process-one-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\process-one-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/process-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\process-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/process-two-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\process-two-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/process-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\process-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/process-two-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\process-two-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/services-details-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\services-details-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/services-four-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\services-four-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/services-four-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\services-four-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/services-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\services-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/services-one-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\services-one-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/site-footer-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\site-footer-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/site-footer-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\site-footer-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/skill-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\skill-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/team-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\team-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/team-one-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\team-one-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/team-one-shape-5.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\team-one-shape-5.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/team-page-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\team-page-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/team-two-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\team-two-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/testimonial-one-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\testimonial-one-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/why-choose-one-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\why-choose-one-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/why-choose-one-shape-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\why-choose-one-shape-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/why-choose-one-shape-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\why-choose-one-shape-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/why-choose-three-bg-shape.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\why-choose-three-bg-shape.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shapes/why-choose-two-shape-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shapes\why-choose-two-shape-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/cart-page-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\cart-page-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/cart-page-img-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\cart-page-img-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-details-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-details-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-details-img-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-details-img-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-details-img-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-details-img-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-details-thumb-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-details-thumb-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-details-thumb-img-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-details-thumb-img-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-details-thumb-img-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-details-thumb-img-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-thumb-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-thumb-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-thumb-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-thumb-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-thumb-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-thumb-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/product-thumb-4.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\product-thumb-4.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/review-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\review-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/review-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\review-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-1-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-1-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-1-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-1-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-1-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-1-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-1-4.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-1-4.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-1-5.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-1-5.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-1-6.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-1-6.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-2-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-2-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-2-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-2-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-2-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-2-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-2-4.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-2-4.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-2-5.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-2-5.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/shop-product-2-6.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\shop-product-2-6.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/wishlist-page-img-1.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\wishlist-page-img-1.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/wishlist-page-img-2.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\wishlist-page-img-2.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/wishlist-page-img-3.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\wishlist-page-img-3.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/shop/wishlist-page-img-4.png
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\shop\wishlist-page-img-4.png
+Content Type: image/png
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-4.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-4.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-5.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-5.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-6.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-6.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-7.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-7.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-1-8.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-1-8.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-2-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-2-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-2-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-2-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/team/team-details-img-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\team\team-details-img-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/testimonial/testimonial-1-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\testimonial\testimonial-1-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/testimonial/testimonial-1-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\testimonial\testimonial-1-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/testimonial/testimonial-1-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\testimonial\testimonial-1-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/testimonial/testimonial-2-1.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\testimonial\testimonial-2-1.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/testimonial/testimonial-2-2.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\testimonial\testimonial-2-2.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/images/testimonial/testimonial-2-3.jpg
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\images\testimonial\testimonial-2-3.jpg
+Content Type: image/jpeg
+
+Uri: https://php.kitmama.top/techguru/assets/js/aos.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\aos.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/bootstrap.bundle.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\bootstrap.bundle.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/countdown.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\countdown.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/gsap/gsap.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\gsap\gsap.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/gsap/ScrollTrigger.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\gsap\ScrollTrigger.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/gsap/SplitText.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\gsap\SplitText.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/isotope.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\isotope.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jarallax.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jarallax.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery-3.6.0.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery-3.6.0.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery-sidebar-content.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery-sidebar-content.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery-ui.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery-ui.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.ajaxchimp.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.ajaxchimp.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.appear.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.appear.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.circleType.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.circleType.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.event.move.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.event.move.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.fittext.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.fittext.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.lettering.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.lettering.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.magnific-popup.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.magnific-popup.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.nice-select.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.nice-select.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/jquery.validate.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\jquery.validate.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/marquee.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\marquee.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/odometer.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\odometer.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/owl.carousel.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\owl.carousel.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/script.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\script.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/swiper.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\swiper.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/twentytwenty.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\twentytwenty.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/typed-2.0.11.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\typed-2.0.11.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/wNumb.min.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\wNumb.min.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/assets/js/wow.js
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\assets\js\wow.js
+Content Type: text/javascript
+
+Uri: https://php.kitmama.top/techguru/backup-recovery.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\backup-recovery.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/blog-carousel.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\blog-carousel.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/blog-details.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\blog-details.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/blog-list-2.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\blog-list-2.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/blog-list.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\blog-list.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/blog.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\blog.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/cart.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\cart.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/checkout.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\checkout.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/cloud-managed-services.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\cloud-managed-services.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/coming-soon.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\coming-soon.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/contact.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\contact.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/data-protection-privacy.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\data-protection-privacy.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/endpoint-device-security.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\endpoint-device-security.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/faq.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\faq.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/gallery.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\gallery.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/index.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\index.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/index2.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\index2.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/index3.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\index3.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/login.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\login.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/portfolio-details.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\portfolio-details.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/portfolio.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\portfolio.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/pricing.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\pricing.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/product-details.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\product-details.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/products.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\products.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/services-carousel.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\services-carousel.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/services.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\services.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/sign-up.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\sign-up.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/team-carousel.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\team-carousel.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/team-details.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\team-details.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/team.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\team.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/testimonials-carousel.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\testimonials-carousel.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/testimonials.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\testimonials.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/threat-detection-prevention.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\threat-detection-prevention.php.html
+Content Type: text/html
+
+Uri: https://php.kitmama.top/techguru/wishlist.php
+File Name: C:\Users\Admin\Downloads\kwikster-web\php.kitmama.top\techguru\wishlist.php.html
+Content Type: text/html
+
