@@ -78,7 +78,7 @@ class LeadController extends Controller
 
             $imported = 0;
             $skipped = 0;
-            $errors = [];
+            $duplicates = 0;
 
             foreach ($rows as $index => $row) {
                 if ($index === 1) continue; // Skip header
@@ -102,7 +102,13 @@ class LeadController extends Controller
 
                 $number = (string) $number;
 
-                // Save lead - no duplicate check
+                // Check for duplicate mobile number
+                if (Lead::where('number', $number)->exists()) {
+                    $duplicates++;
+                    continue;
+                }
+
+                // Save lead
                 try {
                     Lead::create([
                         'number' => $number,
@@ -110,14 +116,20 @@ class LeadController extends Controller
                         'role' => $role,
                         'condition_status' => 'Not Interested'
                     ]);
+                    
                     $imported++;
+                } catch (\Illuminate\Database\UniqueConstraintViolationException $e) {
+                    $duplicates++;
                 } catch (\Exception $e) {
                     $skipped++;
                 }
             }
 
             // Success message
-            $message = "Successfully imported {$imported} leads. Total processed: " . ($index - 1);
+            $message = "Successfully imported {$imported} leads.";
+            if ($duplicates > 0) {
+                $message .= " Skipped {$duplicates} duplicate mobile numbers.";
+            }
             if ($skipped > 0) {
                 $message .= " Skipped {$skipped} invalid rows.";
             }
