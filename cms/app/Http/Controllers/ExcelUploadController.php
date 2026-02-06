@@ -27,50 +27,33 @@ class ExcelUploadController extends Controller
             array_shift($rows);
             
             $count = 0;
-            $duplicates = 0;
             
             foreach ($rows as $row) {
                 if (empty($row[0])) continue; // Skip empty rows
                 
-                $name = trim($row[0] ?? '');
-                $email = trim($row[1] ?? '');
-                $phone = trim($row[2] ?? '');
-                $company = trim($row[3] ?? '');
+                $number = trim($row[0] ?? '');
+                $name = trim($row[1] ?? '');
+                $role = trim($row[2] ?? 'Unknown');
                 
-                // Check for duplicates by phone or email
-                $exists = Lead::where('phone', $phone)
-                    ->orWhere('email', $email)
-                    ->exists();
-                    
-                if ($exists) {
-                    $duplicates++;
-                    continue;
-                }
+                // Skip empty data
+                if (empty($number) || empty($name)) continue;
                 
+                // No duplicate check - import all
                 Lead::create([
+                    'number' => $number,
                     'name' => $name,
-                    'email' => $email,
-                    'phone' => $phone,
-                    'company' => $company,
                     'role' => $role,
-                    'status' => 'new',
-                    'condition_status' => 'New',
-                    'created_at' => now(),
-                    'updated_at' => now()
+                    'condition_status' => 'Not Interested'
                 ]);
                 
                 $count++;
             }
             
             $message = "Successfully imported {$count} leads.";
-            if ($duplicates > 0) {
-                $message .= " Skipped {$duplicates} duplicates.";
-            }
             
             return response()->json([
                 'success' => true,
                 'count' => $count,
-                'duplicates' => $duplicates,
                 'message' => $message
             ]);
             

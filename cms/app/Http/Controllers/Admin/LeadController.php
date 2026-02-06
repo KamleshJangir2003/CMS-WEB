@@ -76,47 +76,33 @@ class LeadController extends Controller
                 return redirect()->back()->with('error', 'File is empty or has no data rows. Found ' . count($rows) . ' rows.');
             }
 
-            $duplicates = [];
             $imported = 0;
             $skipped = 0;
             $errors = [];
 
             foreach ($rows as $index => $row) {
-                if ($index === 1) continue; // Skip header (1-based index)
+                if ($index === 1) continue; // Skip header
 
-                // Column A (number), column B (name), column C (role) ko read karo
                 $number = isset($row['A']) ? trim($row['A']) : '';
                 $name = isset($row['B']) ? trim($row['B']) : '';
                 $role = isset($row['C']) ? trim($row['C']) : 'Unknown';
 
-                // Empty rows skip karo
-                if (empty($number) && empty($name)) {
-                    continue; // Skip completely empty rows
-                }
+                // Skip empty rows
+                if (empty($number) && empty($name)) continue;
 
                 if (empty($number) || empty($name)) {
                     $skipped++;
-                    $errors[] = "Row {$index}: Missing number or name";
                     continue;
                 }
 
-                // Number validation - sirf numbers allow karo
                 if (!is_numeric($number)) {
                     $skipped++;
-                    $errors[] = "Row {$index}: Invalid number format: {$number}";
                     continue;
                 }
 
-                // Convert to integer for consistency
-                $number = (string) intval($number);
+                $number = (string) $number;
 
-                // Check for duplicates
-                if (Lead::where('number', $number)->exists()) {
-                    $duplicates[] = $number;
-                    continue;
-                }
-
-                // Save lead
+                // Save lead - no duplicate check
                 try {
                     Lead::create([
                         'number' => $number,
@@ -127,23 +113,20 @@ class LeadController extends Controller
                     $imported++;
                 } catch (\Exception $e) {
                     $skipped++;
-                    $errors[] = "Row {$index}: Database error - " . $e->getMessage();
                 }
             }
 
-            // Success message with details
-            $message = "Successfully imported {$imported} leads.";
-            if (!empty($duplicates)) {
-                $message .= " Skipped " . count($duplicates) . " duplicates.";
-            }
+            // Success message
+            $message = "Successfully imported {$imported} leads. Total processed: " . ($index - 1);
             if ($skipped > 0) {
                 $message .= " Skipped {$skipped} invalid rows.";
             }
-
-            // Log errors for debugging
-            if (!empty($errors)) {
-                \Log::warning('Excel upload errors', $errors);
-            }
+            
+            \Log::info('Upload completed', [
+                'imported' => $imported,
+                'skipped' => $skipped,
+                'total_rows' => count($rows) - 1
+            ]);
 
             return redirect()->back()->with('success', $message);
 

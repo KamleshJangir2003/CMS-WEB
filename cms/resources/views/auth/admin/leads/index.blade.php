@@ -43,8 +43,8 @@
                 <table class="leads-table">
                     <thead>
                         <tr>
-                            <th>Number</th>
                             <th>Name</th>
+                            <th>Number</th>
                             <th>Condition Status</th>
                             <th>Role</th>
                             <th>WhatsApp</th>
@@ -55,8 +55,8 @@
                     <tbody>
                         @forelse($leads as $lead)
                         <tr>
-                            <td>{{ $lead->name ?? $lead->number }}</td>
-                            <td>{{ $lead->email ?? 'No Name' }}</td>
+                            <td>{{ $lead->name }}</td>
+                            <td>{{ $lead->number }}</td>
 
                             <td>
                                 <select class="status-select" data-id="{{ $lead->id }}">
@@ -66,7 +66,7 @@
                                 </select>
                             </td>
 
-                            <td>{{ $lead->role ?? 'Unknown' }}</td>
+                            <td>{{ $lead->role }}</td>
 
                             <td>
                                 <a href="https://wa.me/91{{ $lead->number }}" target="_blank" class="whatsapp-btn">
@@ -97,50 +97,10 @@
 {{-- ================= STYLES ================= --}}
 <style>
     /* ================= MAIN CONTENT ================= */
-.main-content {
-    margin-left: 260px;                 /* sidebar width */
-    padding: 24px;
-    width: calc(100% - 260px);
-    box-sizing: border-box;
-    background: #f5f6fa;
-}
+
 
 /* ================= HEADER UPLOAD ================= */
-.header-upload {
-    max-width: 1200px;
-    margin: 0 auto 20px auto;
-    background: #fff;
-    padding: 16px 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-}
 
-.upload-form {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-}
-
-.upload-form input[type="file"] {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    flex: 1;
-}
-
-.upload-btn {
-    background: #28a745;
-    color: #fff;
-    padding: 9px 18px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.upload-btn:hover {
-    background: #218838;
-}
 
 /* ================= ALERTS ================= */
 .alert {
