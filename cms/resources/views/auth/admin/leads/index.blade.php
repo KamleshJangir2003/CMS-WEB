@@ -20,6 +20,13 @@
     
     <form action="{{ route('admin.leads.upload') }}" method="POST" enctype="multipart/form-data" class="upload-form" id="uploadForm">
         @csrf
+        <select name="role" required>
+            <option value="">Select Role</option>
+            <option value="Developer">Developer</option>
+            <option value="Designer">Designer</option>
+            <option value="Manager">Manager</option>
+            <option value="Tester">Tester</option>
+        </select>
         <input type="file" name="excel_file" accept=".xlsx,.xls,.csv" required id="fileInput">
         <button type="submit" class="upload-btn" id="uploadBtn">
             <span class="btn-text">Upload Excel</span>

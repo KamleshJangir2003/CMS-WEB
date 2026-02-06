@@ -17,7 +17,7 @@ class ExcelUploadController extends Controller
             ]);
 
             $file = $request->file('excel_file');
-            $role = $request->input('role');
+            $selectedRole = $request->input('role');
             
             $spreadsheet = IOFactory::load($file->getPathname());
             $worksheet = $spreadsheet->getActiveSheet();
@@ -33,7 +33,7 @@ class ExcelUploadController extends Controller
                 
                 $number = trim($row[0] ?? '');
                 $name = trim($row[1] ?? '');
-                $role = trim($row[2] ?? 'Unknown');
+                $role = trim($row[2] ?? $selectedRole); // Use Excel role or selected role
                 
                 // Skip empty data
                 if (empty($number) || empty($name)) continue;
