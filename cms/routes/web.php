@@ -187,6 +187,7 @@ Route::middleware(['auth'])->group(function () {
                     'totalAdmins' => Employee::where('user_type', 'admin')->count(),
                     'totalClients' => Employee::where('user_type', 'client')->count(),
                     'totalLeads' => \DB::table('leads')->count(),
+                    'totalCallbacks' => \DB::table('callbacks')->count(),
                     'totalInterviews' => \DB::table('interviews')->count(),
                     'rejectedInterviews' => \DB::table('interviews')->where('status', 'LIKE', '%reject%')->orWhere('status', 'LIKE', '%Reject%')->count(),
                 ];
@@ -269,6 +270,12 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/leads/upload', [LeadController::class, 'uploadExcel'])->name('leads.upload');
             Route::post('/leads/{id}/status', [LeadController::class, 'updateStatus'])->name('leads.status');
             Route::get('/leads/{id}/profile', [LeadController::class, 'showProfile'])->name('leads.cv');
+            
+            // Callback routes
+            Route::get('/callbacks', [LeadController::class, 'callbacks'])->name('callbacks.index');
+            Route::get('/callbacks/count', [LeadController::class, 'getCallbackCount'])->name('callbacks.count');
+            Route::put('/callbacks/{id}', [LeadController::class, 'updateCallback'])->name('callbacks.update');
+            Route::delete('/callbacks/{id}', [LeadController::class, 'deleteCallback'])->name('callbacks.delete');
 
             /*
             |--------------------------------------------------------------------------

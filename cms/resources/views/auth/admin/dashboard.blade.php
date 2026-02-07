@@ -105,6 +105,15 @@
             </div>
         </div>
         <div class="col-xl-3 col-md-6">
+            <div class="card stat-card bg-warning">
+                <div class="card-body">
+                    <div class="stat-title">Pending Callbacks</div>
+                    <div class="stat-number">{{ $stats['totalCallbacks'] ?? 0 }}</div>
+                    <i class="bi bi-telephone-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
             <div class="card stat-card bg-success">
                 <div class="card-body">
                     <div class="stat-title">Total Employee Interviews</div>

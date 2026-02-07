@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Lead;
+use App\Models\Callback;
 use Illuminate\Http\Request;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use Illuminate\Validation\ValidationException;
@@ -12,7 +13,10 @@ class LeadController extends Controller
 {
     public function index()
     {
-        $leads = Lead::orderBy('id', 'desc')->get();
+        // Only show leads that don't have any scheduled interviews
+        $leads = Lead::whereDoesntHave('interviews')
+                    ->orderBy('id', 'desc')
+                    ->get();
         return view('auth.admin.leads.index', compact('leads'));
     }
 
@@ -158,15 +162,67 @@ class LeadController extends Controller
     public function updateStatus(Request $request, $id)
     {
         $lead = Lead::findOrFail($id);
-        $lead->condition_status = $request->condition_status;
-        $lead->save();
+        $status = $request->condition_status;
         
-        return response()->json(['success' => true]);
+        if ($status === 'Call Back') {
+            // Move to callbacks table
+            Callback::create([
+                'number' => $lead->number,
+                'name' => $lead->name,
+                'role' => $lead->role,
+                'callback_date' => now()->addDay(), // Default to tomorrow
+            ]);
+            
+            // Remove from leads
+            $lead->delete();
+            
+            return response()->json(['success' => true, 'message' => 'Lead moved to callbacks']);
+        } elseif ($status === 'Not Interested') {
+            // Just update status in database, don't delete
+            $lead->condition_status = $status;
+            $lead->save();
+            
+            return response()->json(['success' => true, 'message' => 'Status updated to Not Interested']);
+        } else {
+            // Update status normally
+            $lead->condition_status = $status;
+            $lead->save();
+            
+            return response()->json(['success' => true]);
+        }
     }
 
     public function showProfile($id)
     {
         $lead = Lead::findOrFail($id);
         return view('auth.admin.leads.profile', compact('lead'));
+    }
+
+    public function callbacks()
+    {
+        $callbacks = Callback::orderBy('callback_date', 'asc')->get();
+        return view('auth.admin.leads.callbacks', compact('callbacks'));
+    }
+
+    public function updateCallback(Request $request, $id)
+    {
+        $callback = Callback::findOrFail($id);
+        $callback->update($request->only(['callback_date', 'notes']));
+        
+        return response()->json(['success' => true]);
+    }
+
+    public function deleteCallback($id)
+    {
+        $callback = Callback::findOrFail($id);
+        $callback->delete();
+        
+        return response()->json(['success' => true]);
+    }
+
+    public function getCallbackCount()
+    {
+        $count = Callback::count();
+        return response()->json(['count' => $count]);
     }
 }

@@ -14,8 +14,14 @@
     <a href="{{ route('admin.dashboard') }}">Dashboard</a>
 </li>
 
-        <li><a href="{{ route('admin.leads.index') }}">Leads</a></li>
-        <li><a href="{{ route('admin.interviews.index') }}">Interview Schedule</a></li>
+        <li><a href="{{ route('admin.leads.index') }}"><i class="fa-solid fa-users"></i> Leads</a></li>
+        <li>
+            <a href="{{ route('admin.callbacks.index') }}">
+                <i class="fa-solid fa-phone"></i> Callbacks 
+                <span class="callback-badge" id="callbackCount" style="background: #ff6b6b; color: white; border-radius: 12px; padding: 3px 8px; font-size: 10px; font-weight: bold; margin-left: 8px; display: none;">0</span>
+            </a>
+        </li>
+        <li><a href="{{ route('admin.interviews.index') }}"><i class="fa-solid fa-calendar"></i> Interview Schedule</a></li>
 
         <!-- Employee -->
         <li class="has-sub">
@@ -77,4 +83,31 @@
         <li class="logout"><a href="#">Logout</a></li>
     </ul>
 </div>
+
+<script>
+// Update callback count in sidebar
+window.updateCallbackCount = function() {
+    fetch('/admin/callbacks/count', {
+        method: 'GET',
+        headers: {
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        const badge = document.getElementById('callbackCount');
+        if (badge) {
+            badge.textContent = data.count;
+            badge.style.display = data.count > 0 ? 'inline' : 'none';
+        }
+    })
+    .catch(error => console.log('Error fetching callback count:', error));
+};
+
+// Update count on page load
+document.addEventListener('DOMContentLoaded', updateCallbackCount);
+
+// Update count every 30 seconds
+setInterval(updateCallbackCount, 30000);
+</script>
 

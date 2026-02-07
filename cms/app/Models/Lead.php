@@ -27,4 +27,14 @@ class Lead extends Model
         'condition_status' => 'Not Interested',
         'role' => 'Unknown'
     ];
+
+    public function interviews()
+    {
+        return $this->hasMany(Interview::class);
+    }
+
+    public function hasScheduledInterview()
+    {
+        return $this->interviews()->exists();
+    }
 }

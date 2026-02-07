@@ -43,6 +43,9 @@
     <div class="card leads-card">
         <div class="card-header">
             <h4>Leads List</h4>
+            <a href="{{ route('admin.callbacks.index') }}" class="btn btn-info btn-sm">
+                <i class="fa-solid fa-phone me-1"></i> View Callbacks
+            </a>
         </div>
 
         <div class="card-body">
@@ -69,9 +72,12 @@
 
                             <td>
                                 <select class="status-select" data-id="{{ $lead->id }}">
+                                    
+
+                                   
                                     <option value="Not Interested" {{ $lead->condition_status == 'Not Interested' ? 'selected' : '' }}>Not Interested</option>
                                     <option value="Call Back" {{ $lead->condition_status == 'Call Back' ? 'selected' : '' }}>Call Back</option>
-                                    <option value="Picked" {{ $lead->condition_status == 'Picked' ? 'selected' : '' }}>Picked</option>
+                                    <option value="Picked" {{ $lead->condition_status == 'Picked' ? 'selected' : '' }}>Pickup</option>
                                 </select>
                             </td>
 
@@ -107,6 +113,7 @@
                                     <a href="{{ route('admin.interviews.create', ['lead_id' => $lead->id]) }}" class="schedule-btn">
                                         <i class="fas fa-calendar-plus"></i> Schedule Interview
                                     </a>
+                                    
                                 @else
                                     <span class="text-muted">Process Complete</span>
                                 @endif
@@ -169,11 +176,25 @@
     border-bottom: 1px solid #eee;
     background: #f8f9fa;
     border-radius: 12px 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card-header h4 {
     margin: 0;
     font-weight: 600;
+}
+
+.btn-info {
+    background: #17a2b8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-info:hover {
+    background: #138496;
+    color: #fff;
 }
 
 /* ================= TABLE ================= */
@@ -318,11 +339,34 @@
 
 {{-- ================= SCRIPT ================= --}}
 <script>
+// Notification function
+function showNotification(message, type = 'info') {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `alert alert-${type} alert-dismissible fade show`;
+    notification.style.cssText = 'position: fixed; top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+    notification.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (notification.parentNode) {
+            notification.remove();
+        }
+    }, 5000);
+}
+
 // Status update functionality
 document.querySelectorAll('.status-select').forEach(select => {
     select.addEventListener('change', function () {
         const leadId = this.dataset.id;
         const status = this.value;
+        const row = this.closest('tr');
 
         fetch(`/admin/leads/${leadId}/status`, {
             method: 'POST',
@@ -331,6 +375,31 @@ document.querySelectorAll('.status-select').forEach(select => {
                 'X-CSRF-TOKEN': '{{ csrf_token() }}'
             },
             body: JSON.stringify({ condition_status: status })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                if (status === 'Call Back') {
+                    // Remove the row from the table
+                    row.remove();
+                    
+                    // Show message
+                    showNotification('Lead moved to callbacks page', 'info');
+                    
+                    // Update callback count in sidebar if moved to callback
+                    if (window.updateCallbackCount) {
+                        window.updateCallbackCount();
+                    }
+                } else if (status === 'Not Interested') {
+                    // Remove the row from table
+                    row.remove();
+                    showNotification('Lead marked as Not Interested', 'success');
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again.');
         });
     });
 });
