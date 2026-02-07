@@ -21,6 +21,8 @@
                             <th>Status</th>
                             <th>Updated At</th>
                             <th>WhatsApp</th>
+                            <th>Location</th>
+                            
                             <th>View Profile</th>
                             <th>Actions</th>
                         </tr>
@@ -42,9 +44,20 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="{{ route('admin.leads.cv', $lead->id) }}" class="view-btn">
-                                    View CV
+                                <a href="https://wa.me/91{{ $lead->number }}?text=https://www.google.com/maps/place/Kwikster+Innovative+Optimisations+Pvt.+Ltd/@26.8754017,75.7523984,19z/data=!3m1!4b1!4m6!3m5!1s0x396db5969a50551b:0xbafeb9761902dc5b!8m2!3d26.8754005!4d75.7530421!16s%2Fg%2F11tn0s_9ng?entry=ttu%26g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="location-btn">
+                                    <i class="fa-solid fa-location-dot"></i>
                                 </a>
+                            </td>
+                            <td>
+                                @if($lead->resume)
+                                    <a href="{{ asset('uploads/resumes/' . $lead->resume) }}" target="_blank" class="view-btn">
+                                        View Resume
+                                    </a>
+                                @else
+                                    <button class="upload-btn" onclick="openUploadModal({{ $lead->id }})">
+                                        Upload Resume
+                                    </button>
+                                @endif
                             </td>
                             <td>
                                 <a href="{{ route('admin.interviews.create', ['lead_id' => $lead->id]) }}" class="schedule-btn">
@@ -54,7 +67,7 @@
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="8" style="text-align:center;">No interested candidates found</td>
+                            <td colspan="9" style="text-align:center;">No interested candidates found</td>
                         </tr>
                         @endforelse
                     </tbody>
@@ -170,6 +183,25 @@
     background: #1ebe5d;
 }
 
+.location-btn {
+    background: #dc3545;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.location-btn:hover {
+    background: #c82333;
+    color: #fff;
+}
+
 .schedule-btn {
     background: #28a745;
     color: #fff;
@@ -187,5 +219,201 @@
     background: #218838;
     color: #fff;
 }
+
+.upload-btn {
+    background: #17a2b8;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background: #138496;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.close {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.btn-upload {
+    background: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-upload:hover {
+    background: #218838;
+}
+
+.btn-cancel {
+    background: #6c757d;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background: #5a6268;
+}
 </style>
 @endsection
+
+<!-- Resume Upload Modal -->
+<div id="uploadModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5>Upload Resume</h5>
+            <span class="close" onclick="closeUploadModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form id="resumeUploadForm" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group">
+                    <label for="resume">Select Resume (PDF, DOC, DOCX - Max 5MB):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-upload">Upload</button>
+                    <button type="button" class="btn-cancel" onclick="closeUploadModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+let currentLeadId = null;
+
+function openUploadModal(leadId) {
+    currentLeadId = leadId;
+    document.getElementById('uploadModal').style.display = 'block';
+}
+
+function closeUploadModal() {
+    document.getElementById('uploadModal').style.display = 'none';
+    document.getElementById('resumeUploadForm').reset();
+    currentLeadId = null;
+}
+
+document.getElementById('resumeUploadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    if (!currentLeadId) return;
+    
+    const formData = new FormData(this);
+    const submitBtn = this.querySelector('button[type="submit"]');
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Uploading...';
+    
+    fetch(`/admin/leads/${currentLeadId}/resume`, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Resume uploaded successfully!');
+            location.reload();
+        } else {
+            alert('Upload failed: ' + data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Upload failed. Please try again.');
+    })
+    .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Upload';
+        closeUploadModal();
+    });
+});
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('uploadModal');
+    if (event.target == modal) {
+        closeUploadModal();
+    }
+}
+</script>

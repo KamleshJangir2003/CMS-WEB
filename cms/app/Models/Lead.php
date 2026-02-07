@@ -16,6 +16,7 @@ class Lead extends Model
         'phone', 
         'company',
         'role',
+        'resume',
         'status',
         'condition_status',
         'final_result',

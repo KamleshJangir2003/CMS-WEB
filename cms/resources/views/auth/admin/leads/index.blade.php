@@ -78,6 +78,7 @@
                                     <option value="Picked">Pickup</option>
                                     <option value="Intrested">Intrested</option>
                                     <option value="Rejected">Rejected</option>
+                                    <option value="Wrong Number">Wrong Number</option>
                                 </select>
                             </td>
 

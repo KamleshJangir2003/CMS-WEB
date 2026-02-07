@@ -270,6 +270,7 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/leads/upload', [LeadController::class, 'uploadExcel'])->name('leads.upload');
             Route::post('/leads/{id}/status', [LeadController::class, 'updateStatus'])->name('leads.status');
             Route::get('/leads/{id}/profile', [LeadController::class, 'showProfile'])->name('leads.cv');
+            Route::post('/leads/{id}/resume', [LeadController::class, 'uploadResume'])->name('leads.resume.upload');
             Route::get('/leads/interested', [LeadController::class, 'interested'])->name('leads.interested');
             Route::get('/leads/rejected', [LeadController::class, 'rejected'])->name('leads.rejected');
             

@@ -240,4 +240,44 @@ class LeadController extends Controller
         $count = Callback::count();
         return response()->json(['count' => $count]);
     }
+
+    public function uploadResume(Request $request, $id)
+    {
+        try {
+            $request->validate([
+                'resume' => 'required|file|mimes:pdf,doc,docx|max:5120' // 5MB max
+            ]);
+
+            $lead = Lead::findOrFail($id);
+            
+            if ($request->hasFile('resume')) {
+                // Delete old resume if exists
+                if ($lead->resume && file_exists(public_path('uploads/resumes/' . $lead->resume))) {
+                    unlink(public_path('uploads/resumes/' . $lead->resume));
+                }
+                
+                $file = $request->file('resume');
+                $filename = time() . '_' . $lead->id . '.' . $file->getClientOriginalExtension();
+                
+                // Create directory if it doesn't exist
+                if (!file_exists(public_path('uploads/resumes'))) {
+                    mkdir(public_path('uploads/resumes'), 0755, true);
+                }
+                
+                $file->move(public_path('uploads/resumes'), $filename);
+                
+                $lead->resume = $filename;
+                $lead->save();
+                
+                return response()->json(['success' => true, 'message' => 'Resume uploaded successfully']);
+            }
+            
+            return response()->json(['success' => false, 'message' => 'No file uploaded']);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return response()->json(['success' => false, 'message' => 'Validation failed: ' . implode(', ', $e->validator->errors()->all())]);
+        } catch (\Exception $e) {
+            \Log::error('Resume upload failed: ' . $e->getMessage());
+            return response()->json(['success' => false, 'message' => 'Upload failed. Please try again.']);
+        }
+    }
 }
