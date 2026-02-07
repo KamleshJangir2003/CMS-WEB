@@ -42,7 +42,7 @@
                 <div class="info-row">
                     <label>Resume:</label>
                     @if($lead->resume)
-                        <a href="{{ asset('uploads/resumes/' . $lead->resume) }}" target="_blank" class="resume-link">
+                        <a href="{{ route('admin.leads.resume.view', $lead->resume) }}" target="_blank" class="resume-link">
                             <i class="fa-solid fa-file-pdf"></i> View Resume
                         </a>
                     @else

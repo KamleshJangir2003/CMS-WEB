@@ -205,6 +205,20 @@
 
 <li><hr class="dropdown-divider"></li>
 
+<!-- Manual Entry -->
+<li onclick="toggleManualEntry(event)" style="cursor: pointer; padding: 6px 10px;">
+    <i class="fa-solid fa-user-plus" style="color: #007bff;"></i>
+    Add Manual Entry
+</li>
+
+<li id="manualEntryForm" style="display: none; padding: 10px; background: #f8f9fa; border-radius: 4px; margin: 5px;">
+    <input type="text" id="manualName" placeholder="Enter Name" class="form-control form-control-sm mb-2">
+    <input type="tel" id="manualNumber" placeholder="Enter Number" class="form-control form-control-sm mb-2">
+    <button onclick="saveManualEntry()" class="btn btn-primary btn-sm w-100">Save Lead</button>
+</li>
+
+<li><hr class="dropdown-divider"></li>
+
 <!-- Field Select -->
 <li style="padding: 5px 10px;">
     <label style="font-size: 12px; color: #555;">Select Field</label>
@@ -374,36 +388,65 @@ document.getElementById('excelFileInput').addEventListener('change', function (e
 
     xhr.onload = () => {
         if (xhr.status === 200) {
-            const response = JSON.parse(xhr.responseText);
-            if (response.success) {
-                text.innerText = `Upload Successful! ${response.count} leads imported.`;
-                if (response.duplicates > 0) {
-                    text.innerText += ` (${response.duplicates} duplicates skipped)`;
-                }
-                // Refresh page after 2 seconds to show new data
-                setTimeout(() => {
-                    window.location.reload();
-                }, 2000);
-            } else {
-                text.innerText = 'Upload Failed: ' + response.message;
-            }
+            fill.style.width = '100%';
+            text.innerText = 'Upload Complete!';
+            setTimeout(() => {
+                progress.style.display = 'none';
+                document.querySelector('.dropdown.open').classList.remove('open');
+            }, 2000);
         } else {
             text.innerText = 'Upload Failed!';
+            fill.style.background = '#dc3545';
         }
-        
-        setTimeout(() => {
-            progress.style.display = 'none';
-            fill.style.width = '0%';
-        }, 3000);
     };
 
-    xhr.onerror = () => {
-        text.innerText = 'Upload Error!';
-    };
-
-    xhr.open('POST', '{{ route("upload.excel") }}');
     xhr.send(formData);
 });
+
+/* ---------------- MANUAL ENTRY ---------------- */
+function toggleManualEntry(e) {
+    e.stopPropagation();
+    const form = document.getElementById('manualEntryForm');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+}
+
+function saveManualEntry() {
+    const name = document.getElementById('manualName').value.trim();
+    const number = document.getElementById('manualNumber').value.trim();
+    const role = document.getElementById('roleSelect').value;
+
+    if (!name || !number) {
+        alert('Please enter both name and number!');
+        return;
+    }
+    if (!role) {
+        alert('Please select role first!');
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('number', number);
+    formData.append('role', role);
+    formData.append('_token', '{{ csrf_token() }}');
+
+    fetch('/save-manual-lead', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Lead saved successfully!');
+            document.getElementById('manualName').value = '';
+            document.getElementById('manualNumber').value = '';
+            document.getElementById('manualEntryForm').style.display = 'none';
+        } else {
+            alert('Error saving lead!');
+        }
+    })
+    .catch(() => alert('Network error!'));
+}
 </script>
 
 

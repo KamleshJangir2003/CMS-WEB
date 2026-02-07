@@ -125,6 +125,15 @@ Route::post('/upload-excel', [ExcelUploadController::class, 'uploadExcel'])
 
 /*
 |--------------------------------------------------------------------------
+| Manual Lead Save Route
+|--------------------------------------------------------------------------
+*/
+Route::post('/save-manual-lead', [LeadController::class, 'saveManualLead'])
+    ->middleware('auth')
+    ->name('save.manual.lead');
+
+/*
+|--------------------------------------------------------------------------
 | Protected Routes
 |--------------------------------------------------------------------------
 */
@@ -271,6 +280,7 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/leads/{id}/status', [LeadController::class, 'updateStatus'])->name('leads.status');
             Route::get('/leads/{id}/profile', [LeadController::class, 'showProfile'])->name('leads.cv');
             Route::post('/leads/{id}/resume', [LeadController::class, 'uploadResume'])->name('leads.resume.upload');
+            Route::get('/leads/resume/{filename}', [LeadController::class, 'viewResume'])->name('leads.resume.view');
             Route::get('/leads/interested', [LeadController::class, 'interested'])->name('leads.interested');
             Route::get('/leads/rejected', [LeadController::class, 'rejected'])->name('leads.rejected');
             

@@ -50,7 +50,7 @@
                             </td>
                             <td>
                                 @if($lead->resume)
-                                    <a href="{{ asset('uploads/resumes/' . $lead->resume) }}" target="_blank" class="view-btn">
+                                    <a href="{{ route('admin.leads.resume.view', $lead->resume) }}" target="_blank" class="view-btn">
                                         View Resume
                                     </a>
                                 @else

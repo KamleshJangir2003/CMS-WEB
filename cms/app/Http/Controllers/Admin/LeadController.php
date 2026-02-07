@@ -280,4 +280,45 @@ class LeadController extends Controller
             return response()->json(['success' => false, 'message' => 'Upload failed. Please try again.']);
         }
     }
+
+    public function viewResume($filename)
+    {
+        $path = public_path('uploads/resumes/' . $filename);
+        
+        if (!file_exists($path)) {
+            abort(404, 'Resume not found');
+        }
+        
+        return response()->file($path, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'inline'
+        ]);
+    }
+
+    public function saveManualLead(Request $request)
+    {
+        try {
+            $request->validate([
+                'name' => 'required|string|max:255',
+                'number' => 'required|string|max:20',
+                'role' => 'required|string'
+            ]);
+
+            // Check for duplicate mobile number
+            if (Lead::where('number', $request->number)->exists()) {
+                return response()->json(['success' => false, 'message' => 'This number already exists']);
+            }
+
+            Lead::create([
+                'name' => $request->name,
+                'number' => $request->number,
+                'role' => $request->role,
+                'condition_status' => 'Not Interested'
+            ]);
+
+            return response()->json(['success' => true, 'message' => 'Lead saved successfully']);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Error saving lead']);
+        }
+    }
 }
