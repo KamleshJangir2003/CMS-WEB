@@ -1,12 +1,17 @@
 @extends('auth.layouts.app')
 
 @section('title', 'Employee Profile - ' . $employee->first_name . ' ' . $employee->last_name)
-
+<style>
+    .container-fluid{
+    margin-top: 60px !important;
+    padding-left: 130px !important;
+}
+</style>
 @section('content')
 <div class="main-content">
     <div class="page-header">
         <h1>Employee Profile</h1>
-        <p>View and edit employee details</p>
+        
     </div>
 
     @if(session('success'))

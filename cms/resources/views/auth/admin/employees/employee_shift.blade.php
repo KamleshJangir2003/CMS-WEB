@@ -1,6 +1,12 @@
 @extends('auth.layouts.app')
 
 @section('title', 'Employee Shift Management')
+<style>
+    .container-fluid{
+    margin-top: 60px !important;
+    padding-left: 130px !important;
+}
+</style>
 
 @section('content')
 <div class="container-fluid">

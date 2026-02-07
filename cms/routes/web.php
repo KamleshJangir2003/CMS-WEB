@@ -186,6 +186,9 @@ Route::middleware(['auth'])->group(function () {
                     'pendingApprovals' => Employee::where('is_approved', false)->count(),
                     'totalAdmins' => Employee::where('user_type', 'admin')->count(),
                     'totalClients' => Employee::where('user_type', 'client')->count(),
+                    'totalLeads' => \DB::table('leads')->count(),
+                    'totalInterviews' => \DB::table('interviews')->count(),
+                    'rejectedInterviews' => \DB::table('interviews')->where('status', 'LIKE', '%reject%')->orWhere('status', 'LIKE', '%Reject%')->count(),
                 ];
 
                 $pendingUsers = Employee::where('is_approved', false)->get();

@@ -1,7 +1,12 @@
 @extends('auth.layouts.app')
 
 @section('title', 'Employee Profiles')
-
+<style>
+    .container-fluid{
+    margin-top: 60px !important;
+    padding-left: 130px !important;
+}
+</style>
 @section('content')
 <div class="main-content">
     <div class="page-header">

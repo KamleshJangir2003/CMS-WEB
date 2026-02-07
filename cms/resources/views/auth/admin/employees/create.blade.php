@@ -1,6 +1,12 @@
 @extends('auth.layouts.app')
 
 @section('content')
+<style>
+    .container-fluid{
+    margin-top: 60px !important;
+    padding-left: 130px !important;
+}
+</style>
 <div class="container-fluid">
 
     <!-- Page Header -->

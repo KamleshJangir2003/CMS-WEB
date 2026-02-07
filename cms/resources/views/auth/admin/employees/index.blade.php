@@ -1,7 +1,13 @@
 @extends('auth.layouts.app')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <style>
-    
+.container-fluid{
+    margin-top: 60px !important;
+    padding-left: 130px !important;
+}
+
+
+
 </style>
 @section('content')
 @if(session('success'))

@@ -1,6 +1,14 @@
 @extends('auth.layouts.app')
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+    .container-fluid{
+    margin-top: 60px !important;
+    padding-left: 130px !important;
+}
+</style>
 @section('content')
+
 @if(session('success'))
     <div class="alert alert-success alert-dismissible fade show">
         {{ session('success') }}
