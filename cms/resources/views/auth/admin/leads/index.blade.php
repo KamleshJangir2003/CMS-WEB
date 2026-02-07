@@ -72,12 +72,12 @@
 
                             <td>
                                 <select class="status-select" data-id="{{ $lead->id }}">
-                                    
-
-                                   
-                                    <option value="Not Interested" {{ $lead->condition_status == 'Not Interested' ? 'selected' : '' }}>Not Interested</option>
-                                    <option value="Call Back" {{ $lead->condition_status == 'Call Back' ? 'selected' : '' }}>Call Back</option>
-                                    <option value="Picked" {{ $lead->condition_status == 'Picked' ? 'selected' : '' }}>Pickup</option>
+                                    <option value="" selected>Select Status</option>
+                                    <option value="Not Interested">Not Interested</option>
+                                    <option value="Call Back">Call Back</option>
+                                    <option value="Picked">Pickup</option>
+                                    <option value="Intrested">Intrested</option>
+                                    <option value="Rejected">Rejected</option>
                                 </select>
                             </td>
 
@@ -230,12 +230,14 @@
 /* ================= STATUS DROPDOWN ================= */
 .status-select {
     padding: 6px 14px;
-    border-radius: 20px;
+    border-radius: 16px;
     border: 1px solid #ccc;
-    width: 150px;
+    width: 160px;
     font-size: 13px;
     font-weight: 500;
+    background-color: #fff;
 }
+
 
 /* ================= VIEW BUTTON ================= */
 .view-btn {
@@ -379,21 +381,18 @@ document.querySelectorAll('.status-select').forEach(select => {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
+                // Remove the row from table for any status change
+                row.remove();
+                
                 if (status === 'Call Back') {
-                    // Remove the row from the table
-                    row.remove();
-                    
-                    // Show message
                     showNotification('Lead moved to callbacks page', 'info');
                     
-                    // Update callback count in sidebar if moved to callback
+                    // Update callback count in sidebar
                     if (window.updateCallbackCount) {
                         window.updateCallbackCount();
                     }
-                } else if (status === 'Not Interested') {
-                    // Remove the row from table
-                    row.remove();
-                    showNotification('Lead marked as Not Interested', 'success');
+                } else {
+                    showNotification(`Status updated to ${status}`, 'success');
                 }
             }
         })

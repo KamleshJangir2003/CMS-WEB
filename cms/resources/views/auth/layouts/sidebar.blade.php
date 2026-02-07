@@ -14,14 +14,25 @@
     <a href="{{ route('admin.dashboard') }}">Dashboard</a>
 </li>
 
-        <li><a href="{{ route('admin.leads.index') }}"><i class="fa-solid fa-users"></i> Leads</a></li>
+        <li><a href="{{ route('admin.leads.index') }}"> Leads</a></li>
         <li>
             <a href="{{ route('admin.callbacks.index') }}">
-                <i class="fa-solid fa-phone"></i> Callbacks 
+                 Callbacks 
                 <span class="callback-badge" id="callbackCount" style="background: #ff6b6b; color: white; border-radius: 12px; padding: 3px 8px; font-size: 10px; font-weight: bold; margin-left: 8px; display: none;">0</span>
             </a>
         </li>
-        <li><a href="{{ route('admin.interviews.index') }}"><i class="fa-solid fa-calendar"></i> Interview Schedule</a></li>
+        
+        <li>
+            <a href="{{ route('admin.leads.interested') }}">
+                 Intrested Candidates
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('admin.leads.rejected') }}">
+                 Rejected Candidates
+            </a>
+        </li>
+        <li><a href="{{ route('admin.interviews.index') }}"> Interview Schedule</a></li>
 
         <!-- Employee -->
         <li class="has-sub">

@@ -13,8 +13,13 @@ class LeadController extends Controller
 {
     public function index()
     {
-        // Only show leads that don't have any scheduled interviews
+        // Only show leads with no status or empty status
         $leads = Lead::whereDoesntHave('interviews')
+                    ->where(function($query) {
+                        $query->whereNull('condition_status')
+                              ->orWhere('condition_status', '')
+                              ->orWhere('condition_status', 'Not Interested');
+                    })
                     ->orderBy('id', 'desc')
                     ->get();
         return view('auth.admin.leads.index', compact('leads'));
@@ -170,26 +175,36 @@ class LeadController extends Controller
                 'number' => $lead->number,
                 'name' => $lead->name,
                 'role' => $lead->role,
-                'callback_date' => now()->addDay(), // Default to tomorrow
+                'callback_date' => now()->addDay(),
             ]);
             
             // Remove from leads
             $lead->delete();
             
             return response()->json(['success' => true, 'message' => 'Lead moved to callbacks']);
-        } elseif ($status === 'Not Interested') {
-            // Just update status in database, don't delete
-            $lead->condition_status = $status;
-            $lead->save();
-            
-            return response()->json(['success' => true, 'message' => 'Status updated to Not Interested']);
         } else {
-            // Update status normally
+            // Update status in database for all other statuses
             $lead->condition_status = $status;
             $lead->save();
             
-            return response()->json(['success' => true]);
+            return response()->json(['success' => true, 'message' => 'Status updated successfully']);
         }
+    }
+
+    public function interested()
+    {
+        $leads = Lead::where('condition_status', 'Intrested')
+                    ->orderBy('updated_at', 'desc')
+                    ->get();
+        return view('auth.admin.leads.interested', compact('leads'));
+    }
+
+    public function rejected()
+    {
+        $leads = Lead::where('condition_status', 'Rejected')
+                    ->orderBy('updated_at', 'desc')
+                    ->get();
+        return view('auth.admin.leads.rejected', compact('leads'));
     }
 
     public function showProfile($id)

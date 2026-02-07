@@ -77,97 +77,135 @@
 </div>
 
 <style>
-.main-content {
-    margin-left: 250px;              /* sidebar width */
-    padding: 20px;
-    min-height: 100vh;
-    background: #f8f9fa;
-    width: calc(100% - 250px);       /* 🔥 KEY FIX */
+    /* ===============================
+   GLOBAL RESET (SAFE)
+================================ */
+* {
     box-sizing: border-box;
 }
 
-/* CARD */
+body {
+    margin: 0;
+    background: #f4f6f9;
+    overflow-x: hidden;
+}
+.main-content{
+   
+    margin-top: 60px;
+}
+
+/* ===============================
+   LAYOUT FIX (SIDEBAR + CONTENT)
+================================ */
+/* sidebar width = 250px assumed */
+
+.content,
+.content-wrapper,
+.page-content,
+.container-fluid {
+    margin-left: 250px !important;
+    width: calc(100vw - 250px) !important;
+    max-width: calc(100vw - 250px) !important;
+    padding: 0 !important;
+}
+
+/* ===============================
+   PAGE CONTENT
+================================ */
+
+
+/* ===============================
+   CARD
+================================ */
 .leads-card {
     width: 100%;
-    max-width: 100%;                 /* ❌ center limit hatao */
-    margin: 0;                       /* ❌ auto remove */
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    overflow: hidden;
 }
 
-/* ALERTS */
-.alert {
-    padding: 10px 14px;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    font-size: 14px;
-}
-
-.alert-success {
-    background: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
-
-
-/* CARD HEADER */
-.card-header {
-    padding: 16px 20px;
-    border-bottom: 1px solid #eee;
-    background: #f8f9fa;
-    border-radius: 12px 12px 0 0;
+/* HEADER */
+.leads-card .card-header {
+ 
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.card-header h4 {
+.leads-card .card-header h4 {
     margin: 0;
+    font-size: 18px;
     font-weight: 600;
+    color: #333;
 }
 
-/* TABLE */
+/* ===============================
+   TABLE
+================================ */
 .table-responsive {
+    width: 100%;
     overflow-x: auto;
 }
 
 .leads-table {
     width: 100%;
+   
     border-collapse: collapse;
 }
 
-.leads-table th {
+.leads-table thead th {
     background: #f1f3f5;
-    padding: 14px;
-    text-align: left;
+    padding: 14px 12px;
+    font-size: 13px;
     font-weight: 600;
-    font-size: 14px;
+    color: #444;
+    text-align: left;
     white-space: nowrap;
 }
 
-.leads-table td {
-    padding: 14px;
+.leads-table tbody td {
+    padding: 14px 12px;
+    font-size: 13px;
+    color: #333;
     border-bottom: 1px solid #eee;
     vertical-align: middle;
-    font-size: 14px;
 }
 
-.leads-table tr:hover {
-    background: #f9fafb;
+.leads-table tbody tr:hover {
+    background: #fafafa;
 }
 
-/* WHATSAPP */
+/* ===============================
+   INPUTS
+================================ */
+.form-control {
+    font-size: 12px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.callback-notes {
+    min-width: 200px;
+    resize: vertical;
+}
+
+/* ===============================
+   WHATSAPP BUTTON
+================================ */
 .whatsapp-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     background: #25D366;
     color: #fff;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    font-size: 18px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -176,23 +214,18 @@
     color: #fff;
 }
 
-/* FORM */
-.form-control {
-    padding: 6px 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 13px;
+/* ===============================
+   ACTION BUTTONS
+================================ */
+.leads-table td:last-child {
+    white-space: nowrap;
 }
 
-/* BUTTONS */
 .btn {
-    padding: 6px 12px;
-    border: none;
-    border-radius: 4px;
     font-size: 12px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
 }
 
 .btn-success {
@@ -207,24 +240,72 @@
 
 .btn-outline-secondary {
     background: transparent;
-    color: #6c757d;
     border: 1px solid #6c757d;
+    color: #6c757d;
 }
 
-.btn:hover {
-    opacity: 0.9;
+.btn + .btn {
+    margin-left: 6px;
 }
 
-/* MOBILE */
+/* ===============================
+   ALERT
+================================ */
+.alert-success {
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+/* ===============================
+   MOBILE VIEW
+================================ */
 @media (max-width: 992px) {
+
+    .content,
+    .content-wrapper,
+    .page-content,
+    .container-fluid {
+        margin-left: 0 !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+    }
+
     .main-content {
-        margin-left: 0;
-        width: 100%;
+        padding: 16px;
+    }
+
+    .leads-table {
+        min-width: 100%;
+    }
+
+    .leads-table thead {
+        display: none;
+    }
+
+    .leads-table tr {
+        display: block;
+        margin-bottom: 14px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        padding: 10px;
+    }
+
+    .leads-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 6px;
+        border-bottom: none;
+        font-size: 13px;
+    }
+
+    .leads-table td:last-child {
+        justify-content: flex-start;
+        gap: 8px;
     }
 }
 
 </style>
-
 <script>
 // Save callback functionality
 document.querySelectorAll('.save-callback').forEach(btn => {
