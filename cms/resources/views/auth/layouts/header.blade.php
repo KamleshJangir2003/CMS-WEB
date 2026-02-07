@@ -135,8 +135,8 @@
 
 /* MAIN CONTENT FIX */
 .main-content{
-    margin-left: 260px;
-    padding-top: 80px;
+    margin-left: 131px;
+    /* padding-top: 80px; */
     position: relative;
     z-index: 1;
 }

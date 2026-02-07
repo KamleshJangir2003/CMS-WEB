@@ -15,6 +15,7 @@
 </li>
 
         <li><a href="{{ route('admin.leads.index') }}">Leads</a></li>
+        <li><a href="{{ route('admin.interviews.index') }}">Interview Schedule</a></li>
 
         <!-- Employee -->
         <li class="has-sub">

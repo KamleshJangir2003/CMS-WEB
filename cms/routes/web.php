@@ -142,6 +142,7 @@ Route::middleware(['auth'])->group(function () {
             'admin' => redirect()->route('admin.dashboard'),
             'employee' => redirect()->route('employee.dashboard'),
             'client' => redirect()->route('client.dashboard'),
+            'manager' => redirect()->route('manager.dashboard'),
             default => view('dashboard', compact('user')),
         };
     })->name('dashboard');
@@ -265,6 +266,23 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/leads/upload', [LeadController::class, 'uploadExcel'])->name('leads.upload');
             Route::post('/leads/{id}/status', [LeadController::class, 'updateStatus'])->name('leads.status');
             Route::get('/leads/{id}/profile', [LeadController::class, 'showProfile'])->name('leads.cv');
+
+            /*
+            |--------------------------------------------------------------------------
+            | INTERVIEW MANAGEMENT
+            |--------------------------------------------------------------------------
+            */
+            Route::get('/interviews', [App\Http\Controllers\Admin\InterviewController::class, 'index'])->name('interviews.index');
+            Route::get('/interviews/create', [App\Http\Controllers\Admin\InterviewController::class, 'create'])->name('interviews.create');
+            Route::post('/interviews', [App\Http\Controllers\Admin\InterviewController::class, 'store'])->name('interviews.store');
+            Route::get('/interviews/{interview}', [App\Http\Controllers\Admin\InterviewController::class, 'show'])->name('interviews.show');
+            Route::get('/interviews/{interview}/edit', [App\Http\Controllers\Admin\InterviewController::class, 'edit'])->name('interviews.edit');
+            Route::put('/interviews/{interview}', [App\Http\Controllers\Admin\InterviewController::class, 'update'])->name('interviews.update');
+            Route::delete('/interviews/{interview}', [App\Http\Controllers\Admin\InterviewController::class, 'destroy'])->name('interviews.destroy');
+            Route::post('/interviews/generate-link', [App\Http\Controllers\Admin\InterviewController::class, 'generateMeetingLink'])->name('interviews.generate-link');
+            Route::post('/interviews/{interview}/result', [App\Http\Controllers\Admin\InterviewController::class, 'updateResult'])->name('interviews.result');
+            Route::post('/interviews/{interview}/offer', [App\Http\Controllers\Admin\InterviewController::class, 'makeOffer'])->name('interviews.offer');
+            Route::post('/interviews/{interview}/complete', [App\Http\Controllers\Admin\InterviewController::class, 'completeInterview'])->name('interviews.complete');
         });
 
     /*
@@ -309,6 +327,26 @@ Route::middleware(['auth'])->group(function () {
 
             Route::get('/profile', fn () => view('client.profile'))->name('profile');
             Route::get('/services', fn () => view('client.services'))->name('services');
+        });
+
+    /*
+    |--------------------------------------------------------------------------
+    | MANAGER ROUTES
+    |--------------------------------------------------------------------------
+    */
+    Route::middleware(['check.user.type:manager'])
+        ->prefix('manager')
+        ->name('manager.')
+        ->group(function () {
+
+            Route::get('/dashboard', [App\Http\Controllers\Manager\ManagerInterviewController::class, 'dashboard'])->name('dashboard');
+            Route::get('/interviews', [App\Http\Controllers\Manager\ManagerInterviewController::class, 'index'])->name('interviews.index');
+            Route::post('/interviews/{interview}/result', [App\Http\Controllers\Manager\ManagerInterviewController::class, 'updateResult'])->name('interviews.result');
+            Route::post('/interviews/{interview}/complete', function($id) {
+                $interview = App\Models\Interview::findOrFail($id);
+                $interview->update(['status' => 'Completed']);
+                return response()->json(['success' => true]);
+            })->name('interviews.complete');
         });
 
     /*

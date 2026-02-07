@@ -54,8 +54,10 @@
                             <th>Number</th>
                             <th>Condition Status</th>
                             <th>Role</th>
+                            <!-- <th>Interview Status</th> -->
                             <th>WhatsApp</th>
                             <th>View Profile</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
 
@@ -75,6 +77,19 @@
 
                             <td>{{ $lead->role }}</td>
 
+                            <!-- <td>
+                                @if($lead->final_result == 'Selected')
+                                    <span class="badge badge-success">✅ Selected</span>
+                                @elseif($lead->final_result == 'Rejected')
+                                    <span class="badge badge-danger">❌ Rejected</span>
+                                    @if($lead->rejection_reason)
+                                        <small class="text-muted d-block">{{ Str::limit($lead->rejection_reason, 30) }}</small>
+                                    @endif
+                                @else
+                                    <span class="badge badge-secondary">⏳ Pending</span>
+                                @endif
+                            </td> -->
+
                             <td>
                                 <a href="https://wa.me/91{{ $lead->number }}" target="_blank" class="whatsapp-btn">
                                     <i class="fa-brands fa-whatsapp"></i>
@@ -86,10 +101,20 @@
                                     View CV
                                 </a>
                             </td>
+
+                            <td>
+                                @if($lead->final_result == 'Pending')
+                                    <a href="{{ route('admin.interviews.create', ['lead_id' => $lead->id]) }}" class="schedule-btn">
+                                        <i class="fas fa-calendar-plus"></i> Schedule Interview
+                                    </a>
+                                @else
+                                    <span class="text-muted">Process Complete</span>
+                                @endif
+                            </td>
                         </tr>
                         @empty
                         <tr>
-                            <td colspan="6" style="text-align:center;">No leads found</td>
+                            <td colspan="8" style="text-align:center;">No leads found</td>
                         </tr>
                         @endforelse
                     </tbody>
@@ -221,6 +246,50 @@
 
 .whatsapp-btn:hover {
     background: #1ebe5d;
+}
+
+/* ================= SCHEDULE BUTTON ================= */
+.schedule-btn {
+    background: #28a745;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.schedule-btn:hover {
+    background: #218838;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ================= BADGES ================= */
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge-danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.badge-secondary {
+    background: #e2e3e5;
+    color: #383d41;
 }
 
 /* ================= MOBILE FIX ================= */

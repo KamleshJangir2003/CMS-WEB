@@ -17,7 +17,9 @@ class Lead extends Model
         'company',
         'role',
         'status',
-        'condition_status'
+        'condition_status',
+        'final_result',
+        'rejection_reason'
     ];
 
     protected $attributes = [
