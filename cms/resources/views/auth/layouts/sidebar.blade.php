@@ -94,7 +94,7 @@
 <li class="has-submenu">
     <a class="submenu-toggle">
        
-        <span>Data</span>
+        <span>Apllicant Database</span>
         <i class="fa-solid fa-chevron-down arrow"></i>
     </a>
 
@@ -109,7 +109,8 @@
         <li>
             <a href="{{ route('admin.callbacks.index') }}">
                 <i class="fa-solid fa-phone-volume"></i>
-                Callbacks
+                
+                pending Response
                 <span class="callback-badge" id="callbackCount"
                     style="background:#ff6b6b;color:#fff;border-radius:12px;
                     padding:3px 8px;font-size:10px;font-weight:bold;
@@ -124,7 +125,7 @@
         <li class="has-submenu">
     <a class="submenu-toggle">
         
-        <span>Employee Steps</span>
+        <span>Screening Stage</span>
         <i class="fa-solid fa-chevron-down arrow"></i>
     </a>
 
@@ -153,13 +154,13 @@
         <li>
             <a href="{{ route('admin.employees.documents.index') }}">
                 <i class="fa-solid fa-file-lines"></i>
-                Employee Documents
+                Documentation Verification
             </a>
         </li>
         <li>
             <a href="{{ route('admin.employees.hired.index') }}">
                 <i class="fa-solid fa-user-check"></i>
-                Employee Hired
+                Onboarded
             </a>
         </li>
         
@@ -168,7 +169,7 @@
 
         <li class="has-submenu">
     <a href="#" class="submenu-toggle">
-        Lead Status
+    Application Status
         <i class="fa-solid fa-chevron-down arrow"></i>
     </a>
     <ul class="submenu">
@@ -268,7 +269,7 @@
         <li><a href="{{ route('admin.bills.index') }}"><i class="fa-solid fa-file-invoice"></i> Bill Management</a></li>
         <li><a href="{{ route('admin.expenses.index') }}"><i class="fa-solid fa-money-bill-wave"></i> Expenses</a></li>
         <li><a href="{{ route('admin.tickets.index') }}"><i class="fa-solid fa-ticket-alt"></i> Employee Tickets</a></li>
-        <li><a href="{{ route('admin.employee-expenses.index') }}"><i class="fa-solid fa-receipt"></i> Employee Expenses</a></li>
+        <li><a href="{{ route('admin.employee-expenses.index') }}"><i class="fa-solid fa-receipt"></i> Reimbursement</a></li>
         <li class="logout"><a href="#">Logout</a></li>
     </ul>
 </div>

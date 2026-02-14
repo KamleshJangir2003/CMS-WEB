@@ -165,9 +165,19 @@
         </div>
     </div>
     @endif
+    
 
     <!-- 🔹 Stats Cards -->
     <div class="row g-4 mb-4">
+    <div class="col-xl-3 col-md-6">
+            <div class="card stat-card bg-info">
+                <div class="card-body">
+                    <div class="stat-title">Employee Leads</div>
+                    <div class="stat-number">{{ $stats['totalLeads'] ?? 0 }}</div>
+                    <i class="bi bi-person-plus-fill"></i>
+                </div>
+            </div>
+        </div>
         <div class="col-xl-3 col-md-6">
             <div class="card stat-card bg-primary">
                 <div class="card-body">
@@ -188,7 +198,7 @@
             </div>
         </div>
 
-        <div class="col-xl-3 col-md-6">
+        <!-- <div class="col-xl-3 col-md-6">
             <div class="card stat-card bg-success">
                 <div class="card-body">
                     <div class="stat-title">Total Admins</div>
@@ -196,7 +206,7 @@
                     <i class="bi bi-shield-check"></i>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="col-xl-3 col-md-6">
             <div class="card stat-card bg-info">
@@ -207,15 +217,7 @@
                 </div>
             </div>
         </div> -->
-        <div class="col-xl-3 col-md-6">
-            <div class="card stat-card bg-info">
-                <div class="card-body">
-                    <div class="stat-title">Employee Leads</div>
-                    <div class="stat-number">{{ $stats['totalLeads'] ?? 0 }}</div>
-                    <i class="bi bi-person-plus-fill"></i>
-                </div>
-            </div>
-        </div>
+        
         <div class="col-xl-3 col-md-6">
             <div class="card stat-card bg-warning">
                 <div class="card-body">
@@ -256,6 +258,43 @@
             <div class="card stat-card bg-secondary">
                 <div class="card-body">
                     <div class="stat-title">Total Tickets</div>
+                    <div class="stat-number">{{ $stats['totalTickets'] ?? 0 }}</div>
+                    <i class="bi bi-ticket-detailed"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6">
+            <div class="card stat-card bg-success">
+                <div class="card-body">
+                    <div class="stat-title">Interested</div>
+                    <div class="stat-number">{{ $stats['totalInterviews'] ?? 0 }}</div>
+                    <i class="bi bi-chat-dots-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card stat-card bg-danger">
+                <div class="card-body">
+                    <div class="stat-title"> Interviews Schedule</div>
+                    <div class="stat-number">{{ $stats['rejectedInterviews'] ?? 0 }}</div>
+                    <i class="bi bi-x-circle-fill"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card stat-card bg-warning">
+                <div class="card-body">
+                    <div class="stat-title">Employee Hired</div>
+                    <div class="stat-number">{{ $stats['newTickets'] ?? 0 }}</div>
+                    <i class="bi bi-ticket-perforated"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card stat-card bg-secondary">
+                <div class="card-body">
+                    <div class="stat-title">Selected Employee</div>
                     <div class="stat-number">{{ $stats['totalTickets'] ?? 0 }}</div>
                     <i class="bi bi-ticket-detailed"></i>
                 </div>
@@ -315,7 +354,7 @@
     @endif
 
     <!-- 🔹 Welcome Card -->
-    <div class="card welcome-card">
+    <!-- <div class="card welcome-card">
         <div class="card-body d-flex justify-content-between align-items-center flex-wrap">
             <div>
                 <h4 class="mb-1">Welcome, {{ Auth::user()->first_name }} 👋</h4>
@@ -325,7 +364,7 @@
                 <i class="bi bi-gear"></i> Manage Users
             </a>
         </div>
-    </div>
+    </div> -->
 
 </div>
 
