@@ -54,7 +54,11 @@
                             <td>
                                 <span class="badge badge-success">✅ Interested</span>
                             </td>
-                            <td>{{ $lead->updated_at->format('d M Y, h:i A') }}</td>
+                            <td>
+    {{ $lead->updated_at->format('d M Y') }} <br>
+    {{ $lead->updated_at->format('h:i A') }}
+</td>
+
                             <td>
                                 <a href="https://wa.me/91{{ $lead->number }}" target="_blank" class="whatsapp-btn">
                                     <i class="fa-brands fa-whatsapp"></i>
@@ -68,17 +72,17 @@
                             <td>
                                 @if($lead->resume)
                                     <a href="{{ route('admin.leads.resume.view', $lead->resume) }}" target="_blank" class="view-btn">
-                                        View Resume
+                                        View CV
                                     </a>
                                 @else
                                     <button class="upload-btn" onclick="openUploadModal({{ $lead->id }})">
-                                        Upload Resume
+                                        Upload CV
                                     </button>
                                 @endif
                             </td>
                             <td>
                                 <a href="{{ route('admin.interviews.create', ['lead_id' => $lead->id]) }}" class="schedule-btn">
-                                    <i class="fas fa-calendar-plus"></i> Schedule Interview
+                                    <i class="fas fa-calendar-plus"></i>Interview
                                 </a>
                             </td>
                         </tr>

@@ -761,26 +761,33 @@ document.getElementById('excelMenu').addEventListener('click', function (e) {
 
 <script>
 /* ---------------- DROPDOWN FIX ---------------- */
-document.querySelectorAll('.dropdown-btn').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.dropdown-btn').forEach(btn => {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-        document.querySelectorAll('.dropdown').forEach(d => {
-            if (d !== this.parentElement) d.classList.remove('open');
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown').forEach(d => {
+                if (d !== this.parentElement) d.classList.remove('open');
+            });
+
+            // Toggle current dropdown
+            this.parentElement.classList.toggle('open');
         });
-
-        this.parentElement.classList.toggle('open');
     });
-});
 
-document.addEventListener('click', () => {
-    document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
-});
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('open'));
+    });
 
-/* 🔥 Excel menu ke andar click close na ho */
-document.getElementById('excelMenu').addEventListener('click', e => {
-    e.stopPropagation();
+    // Prevent dropdown menu from closing when clicking inside
+    document.querySelectorAll('.dropdown-menu').forEach(menu => {
+        menu.addEventListener('click', e => {
+            e.stopPropagation();
+        });
+    });
 });
 
 /* ---------------- BIRTHDAY AUTO POPUP ---------------- */

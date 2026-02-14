@@ -170,7 +170,7 @@
                             <a href="{{ route('admin.employees.document', ['userId' => $emp->id]) }}"
                                class="btn btn-sm btn-primary"
                                title="View Documents">
-                                <i class="fa-solid fa-file-lines me-1"></i> View
+                                <i class="fa-solid fa-file-lines me-1"></i> Documents
                             </a>
                         </td>
                     </tr>

@@ -238,7 +238,7 @@
             </div>
             
             <div class="intro-text">
-                We are pleased to inform you that you have successfully cleared all stages of our selection process and have been selected to join <strong>Kwikster Innovative Optimisations Pvt. Ltd.</strong> as an <span class="position-highlight">Exchange Insurance Consultant</span>. We are excited to welcome you to our organization and look forward to your valuable contributions to our team.
+                We are pleased to inform you that you have successfully cleared all stages of our selection process and have been selected to join <strong>Kwikster Innovative Optimisations Pvt. Ltd.</strong> as an <span class="position-highlight"> Insurance Consultant</span>. We are excited to welcome you to our organization and look forward to your valuable contributions to our team.
             </div>
             
             <p style="font-size: 16px; margin-bottom: 25px; color: #34495e;">You are requested to report to our office at the following address:</p>

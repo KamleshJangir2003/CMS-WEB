@@ -30,6 +30,7 @@
                 <div class="section-title">Candidate Information</div>
                 <div class="row">
                     @if($lead)
+                    <input type="hidden" name="lead_id" value="{{ $lead->id }}">
                     <input type="hidden" name="candidate_name" value="{{ $lead->name }}">
 
                         <div class="col">
