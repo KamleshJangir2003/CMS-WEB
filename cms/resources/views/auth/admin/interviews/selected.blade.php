@@ -78,7 +78,7 @@
                             </td>
                             <td>
                                 <div>
-                                    <strong>{{ $interview->updated_at->format('M d, Y') }}</strong><br>
+                                    <strong>{{ formatDate($interview->updated_at) }}</strong><br>
                                     <small>{{ $interview->updated_at->format('g:i A') }}</small>
                                 </div>
                             </td>
@@ -93,7 +93,7 @@
                             </td>
                             <td>
                                 @if($employee && $employee->joining_date)
-                                    <span class="text-success" >{{ $employee->joining_date->format('M d, Y') }}</span>
+                                    <span class="text-success" >{{ formatDate($employee->joining_date) }}</span>
                                 @else
                                     <input type="date" class="form-control form-control-sm" 
                                            id="joining_date_{{ $interview->id }}" 
