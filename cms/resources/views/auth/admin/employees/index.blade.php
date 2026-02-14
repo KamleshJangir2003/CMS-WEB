@@ -74,7 +74,14 @@
                         </td>
 
                         <!-- ROLE -->
-                        <td>{{ ucfirst($emp->user_type) }}</td>
+                        <td>
+                            <div>
+                                <span class="fw-medium">{{ ucfirst($emp->user_type) }}</span>
+                                @if($emp->platform)
+                                    <br><small class="text-muted">{{ ucfirst(str_replace('_', ' ', $emp->platform)) }}</small>
+                                @endif
+                            </div>
+                        </td>
 
                         <!-- DEPARTMENT -->
                         <td>{{ ucfirst($emp->department) }}</td>

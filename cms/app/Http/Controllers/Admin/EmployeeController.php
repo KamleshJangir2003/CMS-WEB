@@ -13,11 +13,26 @@ use Illuminate\Support\Facades\Validator;
 
 class EmployeeController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $employees = Employee::where('user_type', '!=', 'admin')
-                        ->orderBy('first_name')
-                        ->get();
+        $query = Employee::where('user_type', '!=', 'admin');
+        
+        // Combined role and platform filtering
+        if ($request->has('role') && $request->role) {
+            $query->where('user_type', $request->role);
+        }
+        
+        if ($request->has('platform') && $request->platform) {
+            $query->where('platform', $request->platform);
+        }
+        
+        // If both role and platform are provided, filter by both
+        if ($request->has('role') && $request->has('platform') && $request->role && $request->platform) {
+            $query->where('user_type', $request->role)
+                  ->where('platform', $request->platform);
+        }
+        
+        $employees = $query->orderBy('first_name')->get();
         
         return view('auth.admin.employees.index', compact('employees'));
     }
@@ -36,6 +51,7 @@ class EmployeeController extends Controller
             'password' => 'required|min:8',
             'user_type' => 'required|in:employee,client,manager',
             'department' => 'required|string|max:255',
+            'platform' => 'nullable|string|max:255',
         ]);
 
         if ($validator->fails()) {
@@ -49,6 +65,7 @@ class EmployeeController extends Controller
             'password' => Hash::make($request->password),
             'user_type' => $request->user_type,
             'department' => $request->department,
+            'platform' => $request->platform,
             'is_approved' => true,
         ]);
 

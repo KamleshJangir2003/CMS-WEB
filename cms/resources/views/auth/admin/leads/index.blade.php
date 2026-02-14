@@ -174,7 +174,7 @@
                     <div class="search-box">
                         <i class="fa-solid fa-search"></i>
                         <input type="text" name="search" id="searchInput" placeholder="Search by name, number, or role..." value="{{ request('search') }}" autocomplete="off">
-                        <button type="submit" class="search-btn">Search</button>
+                        <!-- <button type="submit" class="search-btn">Search</button> -->
                         @if(request('search'))
                             <a href="{{ route('admin.leads.index') }}" class="clear-btn">Clear</a>
                         @endif
@@ -219,7 +219,14 @@
                                 </select>
                             </td>
 
-                            <td>{{ $lead->role }}</td>
+                            <td>
+                                <div>
+                                    <span class="fw-medium">{{ $lead->role }}</span>
+                                    @if($lead->platform)
+                                        <br><small class="text-muted">{{ ucfirst(str_replace('_', ' ', $lead->platform)) }}</small>
+                                    @endif
+                                </div>
+                            </td>
 
                             <!-- <td>
                                 @if($lead->final_result == 'Selected')

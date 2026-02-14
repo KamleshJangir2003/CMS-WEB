@@ -286,6 +286,7 @@ class LeadController extends Controller
                         'number' => $lead->number,
                         'name' => $lead->name,
                         'role' => $lead->role,
+                        'platform' => $lead->platform,
                         'callback_date' => now()->addDay(),
                         'notes' => $reason,
                         'status' => 'call_backs'
@@ -305,6 +306,7 @@ class LeadController extends Controller
                             'name' => $lead->name,
                             'email' => $lead->email,
                             'role' => $lead->role,
+                            'platform' => $lead->platform,
                             'resume' => $lead->resume,
                             'status' => 'interested',
                             'interested_at' => now()
@@ -540,6 +542,7 @@ class LeadController extends Controller
                 'number' => $callback->number,
                 'name' => $callback->name,
                 'role' => $callback->role,
+                'platform' => $callback->platform,
                 'condition_status' => $this->mapCallbackStatusToLeadStatus($newStatus),
                 'reason' => $reason
             ]);

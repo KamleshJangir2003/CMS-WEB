@@ -20,6 +20,7 @@ class Employee extends Authenticatable
         'email',
         'phone',
         'department',
+        'platform',
 
         // Additional Personal Details
         'father_name',

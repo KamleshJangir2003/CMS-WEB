@@ -43,7 +43,14 @@
                         <tr class="lead-row" data-name="{{ strtolower($lead->name) }}" data-number="{{ $lead->number }}" data-role="{{ strtolower($lead->role) }}" data-reason="{{ strtolower($lead->reason ?? '') }}">
                             <td>{{ $lead->name }}</td>
                             <td>{{ $lead->number }}</td>
-                            <td>{{ $lead->role }}</td>
+                            <td>
+                                <div>
+                                    <span class="fw-medium">{{ $lead->role }}</span>
+                                    @if($lead->platform)
+                                        <br><small class="text-muted">{{ ucfirst(str_replace('_', ' ', $lead->platform)) }}</small>
+                                    @endif
+                                </div>
+                            </td>
                             <td><span class="badge badge-secondary">Not Interested</span></td>
                             <td>{{ $lead->reason ?? 'No reason provided' }}</td>
                             <td>{{ $lead->updated_at->format('d M Y, h:i A') }}</td>

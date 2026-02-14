@@ -14,6 +14,7 @@ class InterestedCandidate extends Model
         'name', 
         'email',
         'role',
+        'platform',
         'resume',
         'status',
         'notes',

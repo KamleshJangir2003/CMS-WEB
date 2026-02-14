@@ -50,7 +50,14 @@
                         <tr>
                             <td>{{ $lead->name }}</td>
                             <td>{{ $lead->number }}</td>
-                            <td>{{ $lead->role }}</td>
+                            <td>
+                                <div>
+                                    <span class="fw-medium">{{ $lead->role }}</span>
+                                    @if($lead->platform)
+                                        <br><small class="text-muted">{{ ucfirst(str_replace('_', ' ', $lead->platform)) }}</small>
+                                    @endif
+                                </div>
+                            </td>
                             <td>
                                 <span class="badge badge-success">✅ Interested</span>
                             </td>

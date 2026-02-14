@@ -13,6 +13,7 @@ class Callback extends Model
         'number',
         'name',
         'role',
+        'platform',
         'callback_date',
         'notes',
         'status'

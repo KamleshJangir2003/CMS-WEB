@@ -1,6 +1,94 @@
 @extends('auth.layouts.app')
 <style>
     /* ===============================
+   STATUS POPUP NOTIFICATION
+================================ */
+.status-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    min-width: 300px;
+    z-index: 10000;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.4s ease;
+    border-left: 4px solid #28a745;
+}
+
+.status-popup.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.status-popup.success {
+    border-left-color: #28a745;
+}
+
+.status-popup.error {
+    border-left-color: #dc3545;
+}
+
+.status-popup.warning {
+    border-left-color: #ffc107;
+}
+
+.status-popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status-popup-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-popup-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.status-popup-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.status-popup-message {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.status-popup-details {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* ===============================
    STATUS DROPDOWN DESIGN
 ================================ */
 
@@ -194,7 +282,14 @@
                         <tr class="callback-row" data-name="{{ strtolower($callback->name) }}" data-number="{{ $callback->number }}" data-role="{{ strtolower($callback->role) }}" data-notes="{{ strtolower($callback->notes) }}">
                             <td>{{ $callback->name }}</td>
                             <td>{{ $callback->number }}</td>
-                            <td>{{ $callback->role }}</td>
+                            <td>
+                                <div>
+                                    <span class="fw-medium">{{ $callback->role }}</span>
+                                    @if($callback->platform)
+                                        <br><small class="text-muted">{{ ucfirst(str_replace('_', ' ', $callback->platform)) }}</small>
+                                    @endif
+                                </div>
+                            </td>
                             <td>
                                 <input type="date" 
                                        class="form-control callback-date" 
@@ -308,12 +403,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 300);
     });
 
-    // Status change functionality
-    document.querySelectorAll('.callback-status').forEach(select => {
+    // Status change functionality with popup notification
+    document.querySelectorAll('.callback-status-select').forEach(select => {
         select.addEventListener('change', function() {
             const callbackId = this.dataset.id;
             const newStatus = this.value;
+            const statusText = this.options[this.selectedIndex].text;
             const row = this.closest('tr');
+            const candidateName = row.querySelector('td:first-child').textContent.trim();
             const notesTextarea = row.querySelector('.callback-notes');
             let reason = notesTextarea ? notesTextarea.value.trim() : '';
             
@@ -321,7 +418,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (newStatus !== 'call_backs') {
                 // Prompt for reason if not already provided
                 if (!reason) {
-                    reason = prompt(`Please provide a reason for marking this as ${this.options[this.selectedIndex].text}:`);
+                    reason = prompt(`Please provide a reason for marking this as ${statusText}:`);
                     if (!reason) {
                         // If user cancels or provides empty reason, revert the selection
                         this.value = 'call_backs';
@@ -347,6 +444,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 .then(response => response.json())
                 .then(data => {
                     if (data.success) {
+                        // Show success popup
+                        showStatusPopup('success', statusText, candidateName);
+                        
                         // Remove row with animation
                         row.style.transition = 'opacity 0.3s ease';
                         row.style.opacity = '0';
@@ -356,16 +456,85 @@ document.addEventListener('DOMContentLoaded', function() {
                             const remainingRows = tableBody.querySelectorAll('.callback-row').length;
                             resultsCount.textContent = `${remainingRows} results`;
                         }, 300);
+                    } else {
+                        // Show error popup
+                        showStatusPopup('error', 'Update Failed', 
+                            'Failed to update status. Please try again.');
+                        this.value = 'call_backs';
                     }
                 })
                 .catch(error => {
                     console.error('Error:', error);
+                    // Show error popup
+                    showStatusPopup('error', 'Network Error', 
+                        'Unable to connect to server. Please check your connection.');
                     // Revert select to original value on error
                     this.value = 'call_backs';
                 });
             }
         });
     });
+    
+    // Function to show status popup notification
+    function showStatusPopup(type, title, message, details = null) {
+        // Remove existing popup if any
+        const existingPopup = document.querySelector('.status-popup');
+        if (existingPopup) {
+            existingPopup.remove();
+        }
+        
+        // Create popup element
+        const popup = document.createElement('div');
+        popup.className = `status-popup ${type}`;
+        
+        // Get appropriate icon
+        let icon = '';
+        switch(type) {
+            case 'success':
+                icon = '<i class="fa-solid fa-check-circle" style="color: #28a745;"></i>';
+                break;
+            case 'error':
+                icon = '<i class="fa-solid fa-exclamation-circle" style="color: #dc3545;"></i>';
+                break;
+            case 'warning':
+                icon = '<i class="fa-solid fa-exclamation-triangle" style="color: #ffc107;"></i>';
+                break;
+        }
+        
+        popup.innerHTML = `
+            <div class="status-popup-header">
+                <div class="status-popup-title">
+                    ${icon}
+                    ${title}
+                </div>
+                <button class="status-popup-close" onclick="this.parentElement.parentElement.remove()">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <div class="status-popup-message">${message}</div>
+            ${details ? `<div class="status-popup-details">${details}</div>` : ''}
+        `;
+        
+        // Add to body
+        document.body.appendChild(popup);
+        
+        // Show with animation
+        setTimeout(() => {
+            popup.classList.add('show');
+        }, 100);
+        
+        // Auto remove after 5 seconds
+        setTimeout(() => {
+            if (popup.parentElement) {
+                popup.classList.remove('show');
+                setTimeout(() => {
+                    if (popup.parentElement) {
+                        popup.remove();
+                    }
+                }, 400);
+            }
+        }, 5000);
+    }
 });
 </script>
 
@@ -653,18 +822,8 @@ body {
 .search-loading {
     opacity: 0.6;
     pointer-events: none;
-}{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: #25D366;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    text-decoration: none;
 }
+
 
 .whatsapp-btn:hover {
     background: #1ebe5d;

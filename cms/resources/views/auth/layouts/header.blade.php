@@ -557,8 +557,159 @@
     transform: scale(0.96);
 }
 
+/* ===============================
+   GLOBAL STATUS POPUP NOTIFICATION
+================================ */
+.status-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    padding: 20px;
+    min-width: 300px;
+    z-index: 10000;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.4s ease;
+    border-left: 4px solid #28a745;
+}
+
+.status-popup.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.status-popup.success {
+    border-left-color: #28a745;
+}
+
+.status-popup.error {
+    border-left-color: #dc3545;
+}
+
+.status-popup.warning {
+    border-left-color: #ffc107;
+}
+
+.status-popup-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.status-popup-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-popup-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.status-popup-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.status-popup-message {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.status-popup-details {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #555;
+}
+
 
 </style>
+
+<script>
+// Global function to show status popup notification
+function showStatusPopup(type, title, message, details = null) {
+    // Remove existing popup if any
+    const existingPopup = document.querySelector('.status-popup');
+    if (existingPopup) {
+        existingPopup.remove();
+    }
+    
+    // Create popup element
+    const popup = document.createElement('div');
+    popup.className = `status-popup ${type}`;
+    
+    // Get appropriate icon
+    let icon = '';
+    switch(type) {
+        case 'success':
+            icon = '<i class="fa-solid fa-check-circle" style="color: #28a745;"></i>';
+            break;
+        case 'error':
+            icon = '<i class="fa-solid fa-exclamation-circle" style="color: #dc3545;"></i>';
+            break;
+        case 'warning':
+            icon = '<i class="fa-solid fa-exclamation-triangle" style="color: #ffc107;"></i>';
+            break;
+    }
+    
+    popup.innerHTML = `
+        <div class="status-popup-header">
+            <div class="status-popup-title">
+                ${icon}
+                ${title}
+            </div>
+            <button class="status-popup-close" onclick="this.parentElement.parentElement.remove()">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <div class="status-popup-message">${message}</div>
+        ${details ? `<div class="status-popup-details">${details}</div>` : ''}
+    `;
+    
+    // Add to body
+    document.body.appendChild(popup);
+    
+    // Show with animation
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 100);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        if (popup.parentElement) {
+            popup.classList.remove('show');
+            setTimeout(() => {
+                if (popup.parentElement) {
+                    popup.remove();
+                }
+            }, 400);
+        }
+    }, 5000);
+}
+</script>
 
 <header class="top-header">
     <div class="header-left">
@@ -1043,15 +1194,47 @@ function selectExcelFile(e) {
     document.getElementById('excelFileInput').click();
 }
 
+/* ---------------- PLATFORM FILTERING ---------------- */
+document.addEventListener('DOMContentLoaded', function() {
+    const platformSelect = document.getElementById('platformSelect');
+    const roleSelect = document.getElementById('roleSelect');
+    
+    function filterEmployees() {
+        const selectedPlatform = platformSelect.value;
+        const selectedRole = roleSelect.value;
+        
+        if (selectedPlatform || selectedRole) {
+            let url = '/admin/employees?';
+            let params = [];
+            
+            if (selectedRole) params.push(`role=${selectedRole}`);
+            if (selectedPlatform) params.push(`platform=${selectedPlatform}`);
+            
+            url += params.join('&');
+            window.location.href = url;
+        }
+    }
+    
+    if (platformSelect) {
+        platformSelect.addEventListener('change', filterEmployees);
+    }
+    
+    if (roleSelect) {
+        roleSelect.addEventListener('change', filterEmployees);
+    }
+});
+
 /* ---------------- UPLOAD EXCEL ---------------- */
 document.getElementById('excelFileInput').addEventListener('change', function (e) {
     const file = e.target.files[0];
     const role = document.getElementById('roleSelect').value;
+    const platform = document.getElementById('platformSelect').value;
     if (!file || !role) return;
 
     const formData = new FormData();
     formData.append('excel_file', file);
     formData.append('role', role);
+    formData.append('platform', platform);
     formData.append('_token', '{{ csrf_token() }}');
 
     const progress = document.getElementById('uploadProgress');
@@ -1098,6 +1281,7 @@ function saveManualEntry() {
     const name = document.getElementById('manualName').value.trim();
     const number = document.getElementById('manualNumber').value.trim();
     const role = document.getElementById('roleSelect').value;
+    const platform = document.getElementById('platformSelect').value;
 
     if (!name || !number) {
         alert('Please enter both name and number!');
@@ -1117,6 +1301,7 @@ function saveManualEntry() {
     formData.append('name', name);
     formData.append('number', number);
     formData.append('role', role);
+    formData.append('platform', platform);
     formData.append('_token', '{{ csrf_token() }}');
 
     fetch('/save-manual-lead', {

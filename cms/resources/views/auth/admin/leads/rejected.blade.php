@@ -55,11 +55,16 @@
                                 @endif
                             </td>
                             <td>
-                                @if($lead->platform === 'indeed')
-                                    PHP Developer {{-- Default role for Indeed leads --}}
-                                @else
-                                    {{ $lead->role }}
-                                @endif
+                                <div>
+                                    @if($lead->platform === 'indeed')
+                                        <span class="fw-medium">PHP Developer</span> {{-- Default role for Indeed leads --}}
+                                    @else
+                                        <span class="fw-medium">{{ $lead->role }}</span>
+                                    @endif
+                                    @if($lead->platform)
+                                        <br><small class="text-muted">{{ ucfirst(str_replace('_', ' ', $lead->platform)) }}</small>
+                                    @endif
+                                </div>
                             </td>
                             <td>
                                 <span class="badge badge-danger">{{ $lead->condition_status }}</span>
