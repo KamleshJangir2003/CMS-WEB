@@ -1,5 +1,34 @@
 @extends('auth.layouts.app')
+<style>
+    .action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
 
+.action-btn {
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    padding: 6px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    font-size: 13px;
+    padding: 8px 14px;
+}
+
+.dropdown-item:hover {
+    background-color: #f1fdf4;
+}
+
+</style>
 @section('content')
 <div class="main-content">
     <div class="page-header">
@@ -64,7 +93,7 @@
                             </td>
                             <td>
                                 @if($employee && $employee->joining_date)
-                                    <span class="text-success">{{ $employee->joining_date->format('M d, Y') }}</span>
+                                    <span class="text-success" >{{ $employee->joining_date->format('M d, Y') }}</span>
                                 @else
                                     <input type="date" class="form-control form-control-sm" 
                                            id="joining_date_{{ $interview->id }}" 
@@ -92,18 +121,40 @@
                                 @endif
                             </td>
                             <td>
-                                <div class="action-buttons">
-                                    <span class="badge badge-success">✅ Selected</span>
-                                    @if(!$employee || !$employee->joining_date || !$employee->current_ctc || !$employee->in_hand_salary)
-                                        <button class="btn btn-success btn-sm" onclick="saveEmploymentDetails({{ $interview->id }})">
-                                            <i class="fas fa-save"></i> Save Details
-                                        </button>
-                                    @endif
-                                    <button class="btn btn-primary btn-sm" onclick="sendWelcomeLetter({{ $interview->id }})">
-                                        <i class="fas fa-envelope"></i> Send Welcome Letter
-                                    </button>
-                                </div>
-                            </td>
+    <div class="action-buttons">
+        <span class="badge badge-success">✅ Selected</span>
+
+        <div class="dropdown">
+            <button class="btn btn-sm btn-light dropdown-toggle action-btn"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Actions
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-end">
+                @if(!$employee || !$employee->joining_date || !$employee->current_ctc || !$employee->in_hand_salary)
+                    <li>
+                        <a class="dropdown-item"
+                           href="javascript:void(0)"
+                           onclick="saveEmploymentDetails({{ $interview->id }})">
+                            <i class="fas fa-save me-2 text-success"></i> Save Details
+                        </a>
+                    </li>
+                @endif
+
+                <li>
+                    <a class="dropdown-item"
+                       href="javascript:void(0)"
+                       onclick="sendWelcomeLetter({{ $interview->id }})">
+                        <i class="fas fa-envelope me-2 text-primary"></i> Send Welcome Letter
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</td>
+
                         </tr>
                     @empty
                         <tr>
@@ -157,16 +208,16 @@
 
 .table {
     width: 100%;
-    min-width: 1200px;
+   
     margin-bottom: 0;
     border-collapse: collapse;
 }
 
 .table th,
 .table td {
-    padding: 12px 8px;
-    text-align: left;
-    border-bottom: 1px solid #dee2e6;
+    padding: 12px 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #e9ecef;
     vertical-align: middle;
 }
 
