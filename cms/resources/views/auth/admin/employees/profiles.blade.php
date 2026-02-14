@@ -1,5 +1,55 @@
 @extends('auth.layouts.app')
+<style>
+   .search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 
+#searchForm {
+    position: relative;
+}
+
+.search-input {
+    width: 350px;
+    height: 42px;
+    padding: 0 18px 0 45px;
+    border-radius: 30px;
+    border: 1px solid #e5e7eb;
+    background-color: #f3f4f6;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Icon inside input */
+#searchForm::before {
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+/* Hover */
+.search-input:hover {
+    background-color: #ffffff;
+}
+
+/* Focus */
+.search-input:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+
+</style>
 @section('title', 'Employee Profiles')
 <style>
     .container-fluid{
@@ -11,7 +61,7 @@
 <div class="main-content">
     <div class="page-header">
         <h1>Employee Profiles</h1>
-        <p>View and manage all employee profiles</p>
+        <!-- <p>View and manage all employee profiles</p> -->
     </div>
 
     @if(session('success'))
@@ -22,7 +72,22 @@
 
     <div class="content-card">
         <div class="card-header">
-            <h3>All Employee Profiles</h3>
+            
+            <div class="search-container">
+                <form method="GET" action="{{ route('admin.employees.profiles') }}" id="searchForm">
+                    <input type="text" name="search" placeholder="Search employees..." 
+                           value="{{ request('search') }}" class="search-input" id="searchInput">
+                </form>
+            </div>
+            <div class="total-count">
+               
+                    @if(isset($employees) && method_exists($employees, 'total'))
+                        ({{ $employees->total() }} total)
+                    @elseif(isset($employees))
+                        ({{ $employees->count() }} total)
+                    @endif
+                
+            </div>
         </div>
 
         <div class="table-responsive">
@@ -65,6 +130,17 @@
                 </tbody>
             </table>
         </div>
+        
+        @if(isset($employees) && method_exists($employees, 'total'))
+            <div class="pagination-info">
+                <div class="pagination-text">
+                    <p>Showing {{ $employees->firstItem() ?? 0 }} to {{ $employees->lastItem() ?? 0 }} of {{ $employees->total() }} total employees</p>
+                </div>
+                <div class="pagination-links">
+                    {{ $employees->appends(request()->query())->links() }}
+                </div>
+            </div>
+        @endif
     </div>
 </div>
 
@@ -91,5 +167,80 @@
 .table th, .table td {
     vertical-align: middle;
 }
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.pagination-info {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-text p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.pagination-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Hide default Laravel pagination text */
+.pagination-links .hidden {
+    display: none !important;
+}
+
+.pagination-links p {
+    display: none !important;
+}
+
+/* Style pagination buttons */
+.pagination-links nav {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-links .pagination {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pagination-links .page-link {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.pagination-links .page-link:hover {
+    background: #f8f9fa;
+}
+
+.pagination-links .page-item.active .page-link {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
 </style>
+
+<script>
+document.getElementById('searchInput').addEventListener('input', function() {
+    document.getElementById('searchForm').submit();
+});
+</script>
 @endsection

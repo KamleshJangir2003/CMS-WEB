@@ -166,11 +166,22 @@ class EmployeeController extends Controller
         return view('auth.admin.employees.employee-details', compact('employee'));
     }
 
-    public function profiles()
+    public function profiles(Request $request)
     {
-        $employees = Employee::where('user_type', '!=', 'admin')
-                        ->orderBy('first_name')
-                        ->get();
+        $query = Employee::where('user_type', '!=', 'admin');
+        
+        if ($request->has('search') && $request->search) {
+            $search = $request->search;
+            $query->where(function($q) use ($search) {
+                $q->whereRaw("CONCAT(first_name, ' ', last_name) LIKE ?", ["%{$search}%"])
+                  ->orWhere('email', 'LIKE', "%{$search}%")
+                  ->orWhere('department', 'LIKE', "%{$search}%")
+                  ->orWhere('contact_number', 'LIKE', "%{$search}%")
+                  ->orWhere('phone', 'LIKE', "%{$search}%");
+            });
+        }
+        
+        $employees = $query->orderBy('first_name')->paginate(10);
         
         return view('auth.admin.employees.profiles', compact('employees'));
     }

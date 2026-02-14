@@ -44,7 +44,16 @@ class AttendanceController extends Controller
             });
         }
 
-        $employees = $query->orderBy('first_name')->get();
+        // Order employees with recent attendance first, then by name
+        $employees = $query->leftJoin('attendance', function($join) use ($selected_date, $selected_shift) {
+                $join->on('employees.id', '=', 'attendance.employee_id')
+                     ->where('attendance.attendance_date', '=', $selected_date)
+                     ->where('attendance.shift', '=', $selected_shift);
+            })
+            ->select('employees.*', 'attendance.created_at as attendance_created_at')
+            ->orderByDesc('attendance.created_at')
+            ->orderBy('employees.first_name')
+            ->get();
         $attendance_data = [];
         $attendance_summary = [];
 
