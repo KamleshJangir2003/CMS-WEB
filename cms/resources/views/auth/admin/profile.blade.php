@@ -180,7 +180,7 @@
 }
 
 .card-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2eacb3 0%, #2eacb3 100%);
     color: white;
     border-bottom: none;
 }
@@ -191,17 +191,17 @@
 }
 
 .form-control:focus {
-    border-color: #667eea;
+    border-color: #2eacb3;
     box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2eacb3 0%, #2eacb3 100%);
     border: none;
 }
 
 .btn-warning {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #2eacb3 0%, #2eacb3 100%);
     border: none;
     color: white;
 }

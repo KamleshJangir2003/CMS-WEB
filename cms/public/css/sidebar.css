@@ -1,25 +1,61 @@
+/* ===============================
+   SIDEBAR MAIN CONTAINER
+================================ */
 .sidebar {
     width: 260px;
     height: 100vh;
-    background: #1e1e2f;
+    background: #111827;
     color: #fff;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column; /* header fixed + menu scroll */
 }
 
+/* ===============================
+   SIDEBAR HEADER (LOGO FIXED)
+================================ */
 .sidebar-header {
     padding: 20px;
     text-align: center;
-    background: #151521;
+    border-bottom: 1px solid #2eacb3;
+    flex-shrink: 0; 
+    /* background: #111827; */
 }
 
+/* ===============================
+   SIDEBAR MENU (SCROLLABLE)
+================================ */
 .sidebar-menu {
     list-style: none;
     padding: 0;
     margin: 0;
+
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
+/* Smooth Scrollbar */
+.sidebar-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background: #2eacb3;
+    border-radius: 10px;
+}
+
+.sidebar-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* ===============================
+   MENU ITEMS
+================================ */
 .sidebar-menu li {
     position: relative;
 }
@@ -27,16 +63,19 @@
 .sidebar-menu li a {
     display: block;
     padding: 12px 20px;
-    color: #cfd8dc;
+    color: #2eacb3;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .sidebar-menu li a:hover {
-    background: #34344a;
+    background: #2eacb3;
     color: #fff;
 }
 
+/* ===============================
+   SUBMENU
+================================ */
 .has-sub > a::after {
     content: "▸";
     position: absolute;
@@ -45,7 +84,7 @@
 
 .submenu {
     display: none;
-    background: #2a2a40;
+    background: #1f2937;
 }
 
 .submenu li a {
@@ -57,34 +96,17 @@
     display: block;
 }
 
+/* ===============================
+   LOGOUT BUTTON
+================================ */
 .logout a {
     background: #c62828;
     color: #fff;
 }
-.sidebar-header {
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #eee;
-}
 
-.user-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.user-info i {
-    font-size: 32px;
-    color: #4f46e5; /* theme color */
-}
-
-.user-name {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-}
-
+/* ===============================
+   TOP HEADER (Right Side)
+================================ */
 .top-header {
     height: 60px;
     background: #ffffff;
@@ -92,7 +114,7 @@
 
     position: fixed;
     top: 0;
-    left: 260px;          /* sidebar width */
+    left: 260px;
     right: 0;
 
     z-index: 999;
@@ -100,13 +122,4 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-}
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 260px;
-    height: 100vh;
-    background: #111827;
-    z-index: 100;   /* sidebar niche */
 }

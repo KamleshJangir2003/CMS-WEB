@@ -234,8 +234,8 @@
 }
 
 .form-check-input:checked {
-    background-color: #667eea;
-    border-color: #667eea;
+    background-color: #2eacb3;
+    border-color: #2eacb3;
 }
 
 .card {
@@ -244,7 +244,7 @@
 }
 
 .card-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2eacb3 0%, #2eacb3 100%);
     color: white;
     border-bottom: none;
 }
@@ -261,12 +261,12 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2eacb3 0%, #2eacb3 100%);
     border: none;
 }
 
 .form-select:focus, .form-control:focus {
-    border-color: #667eea;
+    border-color: #2eacb3;
     box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
 }
 </style>

@@ -22,7 +22,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .header {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            background: linear-gradient(135deg, #2eacb3 0%, #0056b3 100%);
             color: white;
             padding: 50px 40px;
             text-align: center;
@@ -98,10 +98,10 @@
             padding: 35px;
             border-radius: 12px;
             margin: 30px 0;
-            border-left: 5px solid #007bff;
+            border-left: 5px solid #2eacb3;
         }
         .office-address h4 {
-            color: #007bff;
+            color: #2eacb3;
             font-size: 20px;
             margin-bottom: 20px;
             font-weight: 600;
@@ -128,7 +128,7 @@
         }
         .joining-date {
             font-weight: 700;
-            color: #007bff;
+            color: #2eacb3;
             font-size: 18px;
         }
         .documents-section {

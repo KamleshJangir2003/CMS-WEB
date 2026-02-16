@@ -20,7 +20,7 @@
 
 /* Header */
 .salary-calculator-page .card-header {
-    background: linear-gradient(135deg, #0d6efd, #084298);
+    background: linear-gradient(135deg, #2eacb3, #084298);
     border-radius: 12px 12px 0 0;
     padding: 14px 18px;
 }

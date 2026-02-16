@@ -123,7 +123,7 @@
 
 <div class="dashboard-wrapper">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2><i class="fa-solid fa-birthday-cake text-warning"></i> Employee Birthdays</h2>
+        <h2></h2>
         <div class="text-muted">
             <i class="fa-solid fa-calendar"></i> {{ date('Y') }}
         </div>

@@ -333,7 +333,7 @@
 }
 
 .btn-primary {
-    background: #007bff;
+    background: #2eacb3;
     color: white;
 }
 

@@ -35,7 +35,7 @@
     color: #28a745 !important;
 }
 .text-primary {
-    color: #007bff !important;
+    color: #2eacb3 !important;
 }
 .text-info {
     color: #17a2b8 !important;

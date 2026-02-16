@@ -411,9 +411,9 @@
 
 .search-btn {
     padding: 8px 16px;
-    background: #007bff;
+    background: #2eacb3;
     color: #fff;
-    border: 1px solid #007bff;
+    border: 1px solid #2eacb3;
     border-radius: 0;
     font-size: 14px;
     cursor: pointer;
@@ -499,7 +499,7 @@
 
 /* ================= BUTTONS ================= */
 .view-btn {
-    background: #0d6efd;
+    background: #2eacb3;
     color: #fff;
     padding: 6px 16px;
     border-radius: 20px;
@@ -553,7 +553,7 @@
 .page-link {
     padding: 8px 12px;
     border: 1px solid #dee2e6;
-    color: #007bff;
+    color: #2eacb3;
     text-decoration: none;
     border-radius: 4px;
     font-size: 14px;
@@ -566,8 +566,8 @@
 }
 
 .page-item.active .page-link {
-    background: #007bff;
-    border-color: #007bff;
+    background: #2eacb3;
+    border-color: #2eacb3;
     color: #fff;
 }
 

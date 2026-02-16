@@ -152,7 +152,7 @@
 }
 
 .resume-link {
-    background: #0d6efd;
+    background: #2eacb3;
     color: white;
     padding: 8px 16px;
     border-radius: 4px;

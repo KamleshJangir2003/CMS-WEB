@@ -12,7 +12,7 @@
 
 .status-select:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #2eacb3;
     box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
@@ -99,7 +99,7 @@
 }
 
 .btn-save {
-    background: #007bff;
+    background: #2eacb3;
     color: white;
 }
 
@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .upload-btn {
-    background: #007bff;
+    background: #2eacb3;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -687,7 +687,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* ================= BUTTONS ================= */
 .view-btn {
-    background: #007bff;
+    background: #2eacb3;
     color: #fff;
     padding: 6px 12px;
     border-radius: 4px;
@@ -697,7 +697,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .view-btn:hover {
-    background: #0056b3;
+    background:rgb(91, 134, 136);
     color: #fff;
 }
 
@@ -747,21 +747,21 @@ document.addEventListener('DOMContentLoaded', function() {
 .pagination .page-item .page-link {
     border-radius: 8px;
     border: 1px solid #ddd;
-    color: #007bff;
+    color: #2eacb3;
     padding: 6px 12px;
     font-size: 13px;
     transition: 0.2s ease;
 }
 
 .pagination .page-item .page-link:hover {
-    background: #007bff;
+    background: #2eacb3;
     color: #fff;
-    border-color: #007bff;
+    border-color: #2eacb3;
 }
 
 .pagination .page-item.active .page-link {
-    background: #007bff;
-    border-color: #007bff;
+    background: #2eacb3;
+    border-color: #2eacb3;
     color: #fff;
     font-weight: 600;
 }
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* Focus Effect */
 .search-box:focus-within{
-    border-color: #0d6efd;
+    border-color: #2eacb3;
     box-shadow: 0 4px 14px rgba(13,110,253,0.15);
 }
 
@@ -819,7 +819,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /* ===== SEARCH BUTTON ===== */
 .search-btn{
-    background: #0d6efd;
+    background: #2eacb3;
     color: #fff;
     border: none;
     padding: 7px 14px;

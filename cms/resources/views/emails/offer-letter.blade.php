@@ -22,7 +22,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
         .header {
-            background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+            background: linear-gradient(135deg, #2eacb3 0%, #0056b3 100%);
             color: white;
             padding: 50px 40px;
             text-align: center;
@@ -60,7 +60,7 @@
         }
         .congratulations h2 {
             font-size: 32px;
-            color: #007bff;
+            color: #2eacb3;
             margin-bottom: 15px;
             font-weight: 700;
         }
@@ -81,10 +81,10 @@
             padding: 35px;
             border-radius: 12px;
             margin: 30px 0;
-            border: 1px solid #007bff;
+            border: 1px solid #2eacb3;
         }
         .offer-details h3 {
-            color: #007bff;
+            color: #2eacb3;
             font-size: 22px;
             margin-bottom: 25px;
             text-align: center;
@@ -108,7 +108,7 @@
         }
         .detail-value {
             font-weight: 700;
-            color: #007bff;
+            color: #2eacb3;
             font-size: 16px;
         }
         .instructions {
@@ -134,7 +134,7 @@
             font-size: 16px;
         }
         .contact-info a {
-            color: #007bff;
+            color: #2eacb3;
             text-decoration: none;
             font-weight: 600;
         }

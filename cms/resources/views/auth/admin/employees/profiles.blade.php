@@ -222,7 +222,7 @@
 .pagination-links .page-link {
     padding: 8px 12px;
     border: 1px solid #ddd;
-    color: #007bff;
+    color: #2eacb3;
     text-decoration: none;
     border-radius: 4px;
 }
@@ -232,9 +232,9 @@
 }
 
 .pagination-links .page-item.active .page-link {
-    background: #007bff;
+    background: #2eacb3;
     color: white;
-    border-color: #007bff;
+    border-color: #2eacb3;
 }
 </style>
 

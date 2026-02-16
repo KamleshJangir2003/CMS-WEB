@@ -31,7 +31,7 @@
     left: 0;
     height: 100vh;              /* full screen height */
     width: 260px;               /* sidebar width */
-    background: #111827;        /* optional */
+    background: white;          /* white background */
     overflow-y: auto;           /* 🔥 vertical scroll */
     overflow-x: hidden;
 }
@@ -42,7 +42,7 @@
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background: #6b7280;
+    background: #2eacb3;
     border-radius: 10px;
 }
 
@@ -52,8 +52,8 @@
 
 /* Company Info Styles */
 .sidebar-header {
-    padding: 20px 15px;
-    border-bottom: 1px solid #374151;
+    padding: 1.4px 20px;
+    border-bottom: 1px solidrgb(79, 124, 212);
 }
 
 .company-info {
@@ -64,7 +64,7 @@
 .company-logo {
     width: 40px;
     height: 40px;
-    background: #3b82f6;
+    background: #2eacb3;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -78,7 +78,7 @@
 }
 
 .company-name {
-    color: #f9fafb;
+    color: #2eacb3;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -112,14 +112,96 @@
 
 
 </style>
+<style>
+    /* 1. Professional Blue */
+/* Sidebar Menu Styles */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 0;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #2eacb3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a:focus,
+.sidebar-menu a.active {
+    background: #2eacb3;
+    color: white;
+}
+
+.sidebar-menu a:hover i,
+.sidebar-menu a:focus i,
+.sidebar-menu a.active i {
+    color: white !important;
+}
+
+.sidebar-menu i {
+    color: #2eacb3 !important;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.sidebar .submenu {
+    background:rgb(242, 244, 245);
+}
+
+.sidebar .submenu a {
+    padding-left: 50px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sidebar .submenu a:hover,
+.sidebar .submenu a:focus,
+.sidebar .submenu a.active {
+    background: #2eacb3;
+    color: white;
+}
+
+.sidebar .submenu a:hover i,
+.sidebar .submenu a:focus i,
+.sidebar .submenu a.active i {
+    color: white !important;
+}
+
+.sidebar .submenu i {
+    color: #2eacb3 !important;
+}
+
+
+
+
+.company-logo1 img {
+    width: 200px;
+    /* height: 20px; */
+    object-fit: contain;
+    align-items: center
+}
+
+</style>
 <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
-        <div class="company-info">
-            <div class="company-logo">
-                <i class="fa-solid fa-building"></i>
-            </div>
-            <span class="company-name">Kwikster HRMS</span>
-        </div>
+    <div class="company-info">
+    <div class="company-logo1">
+        <img src="{{ asset('Kwikster.jpeg') }}" alt="Kwikster Logo">
+    </div>
+    
+</div>
+
+
         <!-- <div class="user-info">
             <i class="fa-solid fa-user-circle"></i>
             <span class="user-name">HR Admin</span>
@@ -128,25 +210,30 @@
 
 
     <ul class="sidebar-menu">
-        <li>
-    <a href="{{ route('admin.dashboard') }}">Dashboard</a>
+    <li>
+    <a href="{{ route('admin.dashboard') }}">
+        <i class="fa-solid fa-gauge-high"></i>
+        Dashboard
+    </a>
 </li>
 <li class="has-submenu">
-    <a class="submenu-toggle">
-       
-        <span>Apllicant Database</span>
-        <i class="fa-solid fa-chevron-down arrow"></i>
-    </a>
+<a class="submenu-toggle">
+    <span>
+        <i class="fa-solid fa-folder-open"></i>
+        Applicant Database
+    </span>
+    <i class="fa-solid fa-chevron-down arrow"></i>
+</a>
 
     <ul class="submenu">
-        <li>
+       
             <a href="{{ route('admin.leads.index') }}">
                 <i class="fa-solid fa-address-book"></i>
                 Leads
             </a>
-        </li>
+        
 
-        <li>
+        
             <a href="{{ route('admin.callbacks.index') }}">
                 <i class="fa-solid fa-phone-volume"></i>
                 
@@ -158,77 +245,77 @@
                     0
                 </span>
             </a>
-        </li>
+        
     </ul>
 </li>
 
         <li class="has-submenu">
-    <a class="submenu-toggle">
-        
-        <span>Screening Stage</span>
-        <i class="fa-solid fa-chevron-down arrow"></i>
-    </a>
+        <a class="submenu-toggle">
+    <span>
+        <i class="fa-solid fa-clipboard-list"></i>
+        Screening Stage
+    </span>
+    <i class="fa-solid fa-chevron-down arrow"></i>
+</a>
+
 
     <ul class="submenu">
-        <li>
+       
             <a href="{{ route('admin.leads.interested') }}">
                 <i class="fa-solid fa-star"></i>
                 Interested
             </a>
-        </li>
-
-        <li>
+       
             <a href="{{ route('admin.interviews.index') }}">
                 <i class="fa-solid fa-calendar-check"></i>
                 Interview Schedule
             </a>
-        </li>
-
-        <li>
+        
             <a href="{{ route('admin.interviews.selected') }}">
                 <i class="fa-solid fa-user-check"></i>
                 Selected Employees
             </a>
-        </li>
+        
 
-        <li>
+        
             <a href="{{ route('admin.employees.documents.index') }}">
                 <i class="fa-solid fa-file-lines"></i>
                 Documentation Verification
             </a>
-        </li>
-        <li>
+        
+        
             <a href="{{ route('admin.employees.hired.index') }}">
                 <i class="fa-solid fa-user-check"></i>
                 Onboarded
             </a>
-        </li>
+       
         
     </ul>
 </li>
 
         <li class="has-submenu">
-    <a href="#" class="submenu-toggle">
-    Application Status
-        <i class="fa-solid fa-chevron-down arrow"></i>
-    </a>
+        <a href="#" class="submenu-toggle">
+    <span>
+        <i class="fa-solid fa-bars-progress"></i>
+        Application Status
+    </span>
+    <i class="fa-solid fa-chevron-down arrow"></i>
+</a>
+
     <ul class="submenu">
         
-        <li>
+       
             <a href="{{ route('admin.leads.rejected') }}">Rejected</a>
-        </li>
-        <li>
+        
             <a href="{{ route('admin.leads.not-interested') }}">Not Interested</a>
-        </li>
-        <li>
+        
             <a href="{{ route('admin.leads.wrong-number') }}">Wrong Number</a>
-        </li>
-        <li>
+        
             <a href="/admin/employees/not-selected">
-                <i class="fa-solid fa-user-times"></i>
+               
                 Not Selected Employee
             </a>
-        </li>
+        
     </ul>
 </li>
 
@@ -238,42 +325,46 @@
        
         <!-- Employee -->
         <li class="has-sub">
-            <a href="#">Employee</a>
+            <a href="#">
+            <i class="fa-solid fa-users"></i> Employee</a>
             <ul class="submenu">
-                <li><a href="{{ route('admin.employees.index') }}">All Employee</a>
+                <a href="{{ route('admin.employees.index') }}">All Employee</a>
+            
+             <a href="{{ route('admin.employee.create') }}">Add Employee</a>
             </li>
-             <li><a href="{{ route('admin.employee.create') }}">Add Employee</a>
-            </li>
-                <li><a href="{{ route('admin.employee.shifts.index') }}">Employee Shift</a></li>
-                <li><a href="{{ route('admin.employees.profiles') }}">Employee Profile</a></li>
-                <li><a href="{{ route('admin.employees.list') }}">All Employee Details</a></li>
-                <li><a href="{{ route('admin.employee.credentials') }}">Employee Login</a></li>
-                <li><a href="#">Employee Exit / Offboarding</a></li>
+                <a href="{{ route('admin.employee.shifts.index') }}">Employee Shift</a>
+                <a href="{{ route('admin.employees.profiles') }}">Employee Profile</a>
+                <a href="{{ route('admin.employees.list') }}">All Employee Details</a>
+                <a href="{{ route('admin.employee.credentials') }}">Employee Login</a>
+                <!-- <a href="#">Employee Exit / Offboarding</a> -->
             </ul>
         </li>
 
         <!-- Leave Management -->
         <li class="has-sub">
-            <a href="#">Leave Management</a>
+            <a href="#">
+            <i class="fa-solid fa-calendar-check"></i> Leave Management</a>
             <ul class="submenu">
-                <li><a href="#">All Leave Request</a></li>
-                <li><a href="#">Leave Type</a></li>
-                <li><a href="{{ route('admin.attendance.index') }}">
+                <a href="#">All Leave Request</a>
+                <a href="#">Leave Type</a>
+                <a href="{{ route('admin.attendance.index') }}">
                     <i class="fa-solid fa-calendar-check"></i>
                     Attendance
-                </a></li>
+                </a>
             </ul>
         </li>
         <li class="has-sub">
-            <a href="#">Payroll</a>
+            
+            <a href="#">
+            <i class="fa-solid fa-file-invoice-dollar"></i> Payroll</a>
             <ul class="submenu">
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Employee</a></li>
-                <li><a href="{{ route('admin.salary.index') }}">
+                <a href="#">Overview</a>
+                <a href="#">Employee</a>
+                <a href="{{ route('admin.salary.index') }}">
                     <i class="fa-solid fa-money-bill-wave"></i>
                     Salary Management
-                </a></li>
-                <li><a href="#">PaySlip</a></li>
+                </a>
+                <a href="#">PaySlip</a>
             </ul>
         </li>
 
@@ -301,7 +392,8 @@
         </li> -->
 
         <!-- <li><a href="#">Maps</a></li> -->
-        <li><a href="{{ route('admin.hr-notes.index') }}">HR Notes</a></li>
+        <li><a href="{{ route('admin.hr-notes.index') }}">
+        <i class="fa-solid fa-clipboard"></i> HR Notes</a></li>
         <li><a href="{{ route('admin.job-openings.index') }}"><i class="fa-solid fa-briefcase"></i> Job Opening Management</a></li>
        
         <li><a href="{{ route('admin.birthdays.index') }}"><i class="fa-solid fa-birthday-cake"></i> Birthday</a></li>
@@ -312,6 +404,57 @@
         <li><a href="{{ route('admin.employee-expenses.index') }}"><i class="fa-solid fa-receipt"></i> Reimbursement</a></li>
         <!-- <li class="logout"><a href="#">Logout</a></li> -->
     </ul>
+    
+    <!-- Mobile Header Items -->
+    <div class="mobile-header-items" style="display: none;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li>
+                <a href="{{ route('admin.employee.create') }}">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Add Employee
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('admin.salary.calculator') }}">
+                    <i class="fa-solid fa-calculator"></i>
+                    Salary Calculator
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('admin.pf.forms') }}">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    PF Form
+                </a>
+            </li>
+            <li>
+                <a href="#" onclick="showNotifications()">
+                    <i class="fa-regular fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('admin.profile') }}">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('admin.settings') }}">
+                    <i class="fa-solid fa-cog"></i>
+                    Settings
+                </a>
+            </li>
+            <li>
+                <form action="{{ route('logout') }}" method="POST" style="margin: 0;">
+                    @csrf
+                    <button type="submit" style="background: none; border: none; color: #f9fafb; width: 100%; text-align: left; padding: 10px 15px; display: flex; align-items: center; gap: 10px; border-radius: 6px; transition: background 0.2s;" onmouseover="this.style.background='#374151'" onmouseout="this.style.background='none'">
+                        <i class="fa-solid fa-sign-out-alt"></i>
+                        Logout
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
 </div>
 
 <script>

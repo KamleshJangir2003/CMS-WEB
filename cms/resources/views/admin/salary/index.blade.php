@@ -285,7 +285,7 @@ body {
                     </div>
                     <div class="col-md-2">
                         <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body text-center" style="background: linear-gradient(135deg, #007bff, #0056b3); color: white; border-radius: 8px;">
+                            <div class="card-body text-center" style="background: linear-gradient(135deg, #2eacb3, #0056b3); color: white; border-radius: 8px;">
                                 <i class="fas fa-hand-holding-usd fa-2x mb-2"></i>
                                 <h6 class="card-title">In-Hand Salary</h6>
                                 <h4 id="inHandSalary"></h4>

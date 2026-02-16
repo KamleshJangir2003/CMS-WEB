@@ -276,7 +276,7 @@ textarea{
 }
 
 .generate-btn{
-    background:#007bff;
+    background:#2eacb3;
     color:#fff;
     border:none;
     padding:10px 15px;

@@ -117,14 +117,58 @@ table th {
         display: none;
     }
     
-    /* Make header items smaller */
+    /* Hide ALL header right items on mobile */
     .header-right {
-        gap: 5px;
+        display: none !important;
     }
     
-    .header-right li a {
-        padding: 4px 8px;
-        font-size: 11px;
+    /* Add logo to header on mobile */
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex: 1;
+    }
+    
+    .mobile-logo {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+        color: #333;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .mobile-logo i {
+        color: #3b82f6;
+        font-size: 20px;
+    }
+    
+    /* Show mobile header items in sidebar */
+    .sidebar .mobile-header-items {
+        display: block !important;
+        border-top: 1px solid #374151;
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    
+    .sidebar .mobile-header-items li {
+        margin-bottom: 8px;
+    }
+    
+    .sidebar .mobile-header-items a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+        color:#2eacb3;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.2s;
+    }
+    
+    .sidebar .mobile-header-items a:hover {
+        background: #374151;
     }
     
     /* Global responsive styles for all pages */
@@ -241,6 +285,16 @@ table th {
 @media (min-width: 1025px) {
     .menu-btn {
         display: none;
+    }
+    
+    /* Hide mobile logo on desktop */
+    .mobile-logo {
+        display: none !important;
+    }
+    
+    /* Hide mobile header items in sidebar on desktop */
+    .sidebar .mobile-header-items {
+        display: none !important;
     }
 }
 

@@ -18,7 +18,7 @@
     width: calc(100% - 260px);
     height: 60px;
     background: #fff;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #2eacb3;
 
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@
 }
 
 .dropdown-menu li{
-    padding: 10px;
+    padding: 2px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -300,30 +300,30 @@
 
 /* Salary Calculator style */
 .header-right li a .fa-calculator {
-    color: #0d6efd;
+    color: #2eacb3;
 }
 .header-right li a[href*="salary"] {
     background: #eef5ff;
-    color: #0d6efd;
+    color: #2eacb3;
     border: 1px solid #d6e4ff;
 }
 .header-right li a[href*="salary"]:hover {
-    background: #0d6efd;
+    background: #2eacb3;
     color: #fff;
     box-shadow: 0 6px 15px rgba(13,110,253,0.3);
 }
 
 /* PF Form style */
 .header-right li a .fa-file-invoice {
-    color: #198754;
+    color: #2eacb3;
 }
 .header-right li a[href*="pf"] {
     background: #f4fff8;
-    color: #198754;
+    color: #2eacb3;
     border: 1px solid #c9f1dc;
 }
 .header-right li a[href*="pf"]:hover {
-    background: #198754;
+    background: #2eacb3;
     color: #fff;
     box-shadow: 0 6px 15px rgba(25,135,84,0.3);
 }
@@ -341,8 +341,8 @@
     padding: 8px 12px;
     border-radius: 8px;
     background: #e9f7ef;
-    border: 1px solid #b7e4c7;
-    color: #198754;
+    border: 1px solid #2eacb3;
+    color: #2eacb3;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -351,7 +351,7 @@
 /* Excel icon */
 #excelUploadBtn .fa-file-excel {
     font-size: 18px;
-    color: #198754;
+    color: #2eacb3;
 }
 
 /* Dropdown arrow */
@@ -362,7 +362,7 @@
 
 /* Hover effect */
 #excelUploadBtn:hover {
-    background: #198754;
+    background: #2eacb3;
     color: #fff;
     box-shadow: 0 6px 15px rgba(25,135,84,0.35);
     transform: translateY(-1px);
@@ -426,7 +426,7 @@
 
 .global-search input:focus {
     outline: none;
-    border-color: #ff9900;
+    border-color: #2eacb3;
     background: #fff;
     box-shadow: 0 2px 8px rgba(255, 153, 0, 0.2);
 }
@@ -719,9 +719,27 @@ function showStatusPopup(type, title, message, details = null) {
         <button class="menu-btn" id="menuToggle">
             <i class="fa-solid fa-bars"></i>
         </button>
+        
+        <!-- MOBILE LOGO -->
+        <div class="mobile-logo" style="display: none;">
+            <i class="fa-solid fa-building"></i>
+            <span>Kwikster HRMS</span>
+        </div>
 
-        <!-- EXCEL UPLOAD -->
-        <div class="dropdown">
+        
+     
+         <!-- GLOBAL SEARCH -->
+<div class="global-search">
+    <i class="fa-solid fa-search search-icon"></i>
+    <input type="text" id="globalSearchInput"
+           placeholder="Search In HRMS">
+    <div id="globalSearchResults" class="global-search-results"></div>
+</div>
+    </div>
+   
+
+<!-- EXCEL UPLOAD -->
+<div class="dropdown">
             <input type="file" id="excelFileInput" accept=".xlsx,.xls,.csv" style="display: none;">
             <button class="header-icon dropdown-btn" id="excelUploadBtn" title="Upload Excel">
     <i class="fa-solid fa-file-excel"></i>
@@ -747,7 +765,7 @@ function showStatusPopup(type, title, message, details = null) {
 
 <!-- Manual Entry -->
 <li onclick="toggleManualEntry(event)" style="cursor: pointer; padding: 6px 10px;">
-    <i class="fa-solid fa-user-plus" style="color: #007bff;"></i>
+    <i class="fa-solid fa-user-plus" style="color: #2eacb3;"></i>
     Add Manual Entry
 </li>
 
@@ -807,26 +825,23 @@ function showStatusPopup(type, title, message, details = null) {
 </ul>
 
         </div>
-        
-    </div>
-    <!-- GLOBAL SEARCH -->
-<div class="global-search">
-    <i class="fa-solid fa-search search-icon"></i>
-    <input type="text" id="globalSearchInput"
-           placeholder="Search employees by name or mobile number...">
-    <div id="globalSearchResults" class="global-search-results"></div>
-</div>
+
 
 
 
     <div class="header-right">
+        <!-- <li>
     <a href="{{ route('admin.employee.create') }}" class="header-icon" title="Add Employee">
-    <i class="fa-solid fa-user-plus"></i>
-    
-</a>
-    <!-- TEST BUTTON -->
-    <!-- <button onclick="alert('Test works!')" style="background: red; color: white; padding: 10px;">TEST</button> -->
-    
+        <i class="fa-solid fa-user-plus"></i>
+    </a>
+    </li> -->
+
+    <li>
+        <a href="{{ route('admin.employee.create') }}" class="header-icon" title="Add Employee">
+        <i class="fa-solid fa-user-plus"></i>
+           
+        </a>
+    </li>
     <!-- SALARY CALCULATOR LINK -->
     <li>
         <a href="{{ route('admin.salary.calculator') }}">
@@ -835,12 +850,12 @@ function showStatusPopup(type, title, message, details = null) {
         </a>
     </li>
 
-<li>
-    <a href="{{ route('admin.pf.forms') }}">
-        <i class="fa-solid fa-file-invoice"></i>
-        PF Form
-    </a>
-</li>
+    <li>
+        <a href="{{ route('admin.pf.forms') }}">
+            <i class="fa-solid fa-file-invoice"></i>
+            PF Form
+        </a>
+    </li>
 
 
        
@@ -915,7 +930,7 @@ function showStatusPopup(type, title, message, details = null) {
                 <li class="logout">
                     <form action="{{ route('logout') }}" method="POST" style="display: inline;">
                         @csrf
-                        <button type="submit" style="background: none; border: none; color: inherit; cursor: pointer; width: 100%; text-align: left; padding: 0;">
+                        <button type="submit" style="background: none; border: none; color: inherit; cursor: pointer; width: 100%;  padding: 0;">
                             <i class="fa-solid fa-sign-out-alt"></i> Logout
                         </button>
                     </form>
@@ -1399,6 +1414,7 @@ searchInput.addEventListener('focus', function() {
     }
 });
 </script>
+
 
 
 

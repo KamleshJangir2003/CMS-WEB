@@ -584,15 +584,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .search-box input:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: #2eacb3;
     box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
 }
 
 .search-btn {
     padding: 10px 16px;
-    background: #007bff;
+    background: #2eacb3;
     color: #fff;
-    border: 1px solid #007bff;
+    border: 1px solid #2eacb3;
     border-radius: 0;
     font-size: 14px;
     cursor: pointer;
@@ -651,7 +651,7 @@ document.addEventListener('DOMContentLoaded', function() {
 .page-link {
     padding: 8px 12px;
     border: 1px solid #dee2e6;
-    color: #007bff;
+    color: #2eacb3;
     text-decoration: none;
     border-radius: 4px;
     font-size: 14px;
@@ -664,8 +664,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .page-item.active .page-link {
-    background: #007bff;
-    border-color: #007bff;
+    background: #2eacb3;
+    border-color: #2eacb3;
     color: #fff;
 }
 
@@ -766,7 +766,7 @@ body {
 }
 
 .leads-table tbody td {
-    padding: 14px 12px;
+    padding: 6px 12px;
     font-size: 13px;
     color: #333;
     border-bottom: 1px solid #eee;

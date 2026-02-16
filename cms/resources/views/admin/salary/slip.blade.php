@@ -21,14 +21,14 @@
         }
         .header {
             text-align: center;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid #2eacb3;
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
         .company-name {
             font-size: 24px;
             font-weight: bold;
-            color: #007bff;
+            color: #2eacb3;
             margin-bottom: 5px;
         }
         .slip-title {
@@ -49,7 +49,7 @@
             flex: 1;
         }
         .info-section h4 {
-            color: #007bff;
+            color: #2eacb3;
             margin-bottom: 10px;
             font-size: 16px;
         }
@@ -78,7 +78,7 @@
             border-bottom: 1px solid #ddd;
         }
         .salary-table th {
-            background-color: #007bff;
+            background-color: #2eacb3;
             color: white;
             font-weight: bold;
         }
@@ -113,7 +113,7 @@
         .attendance-count {
             font-size: 20px;
             font-weight: bold;
-            color: #007bff;
+            color: #2eacb3;
         }
         .attendance-label {
             font-size: 12px;
@@ -193,7 +193,7 @@
 
         <!-- Attendance Breakdown -->
         <div class="attendance-section">
-            <h4 style="color: #007bff; margin-bottom: 15px;">Attendance Summary</h4>
+            <h4 style="color: #2eacb3; margin-bottom: 15px;">Attendance Summary</h4>
             <div class="attendance-grid">
                 @foreach($attendanceBreakdown as $status => $count)
                     <div class="attendance-item">

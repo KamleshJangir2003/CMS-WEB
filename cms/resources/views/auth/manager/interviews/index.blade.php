@@ -132,7 +132,7 @@
 .badge-info { background-color: #17a2b8; color: white; }
 .badge-success { background-color: #28a745; color: white; }
 .badge-warning { background-color: #ffc107; color: black; }
-.badge-primary { background-color: #007bff; color: white; }
+.badge-primary { background-color: #2eacb3; color: white; }
 .badge-danger { background-color: #dc3545; color: white; }
 .badge-secondary { background-color: #6c757d; color: white; }
 
@@ -143,7 +143,7 @@
 }
 
 .meeting-link {
-    color: #007bff;
+    color: #2eacb3;
     text-decoration: none;
     font-size: 12px;
 }

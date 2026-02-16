@@ -196,9 +196,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 .search-btn {
     padding: 10px 16px;
-    background: #007bff;
+    background: #2eacb3;
     color: #fff;
-    border: 1px solid #007bff;
+    border: 1px solid #2eacb3;
     border-radius: 0;
     font-size: 14px;
     cursor: pointer;
@@ -250,8 +250,8 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 
 .badge-secondary {
-    background: #e2e3e5;
-    color: #383d41;
+    background: red;
+    color: white;
 }
 
 .whatsapp-btn {
