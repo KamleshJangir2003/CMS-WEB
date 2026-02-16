@@ -5,6 +5,15 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 <style>
+:root {
+    --bs-primary: #2eacb3;
+    --bs-primary-rgb: 46, 172, 179;
+}
+
+.bg-primary {
+    background-color: #2eacb3 !important;
+}
+
 .dashboard-wrapper{
     padding: 25px;
     margin-left: 130px;
@@ -69,7 +78,7 @@
     transform: translateY(-5px);
 }
 .birthday-header{
-    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    background: linear-gradient(135deg, #2eacb3, #2eacb3);
     color: white;
     border-radius: 14px 14px 0 0;
     padding: 20px;
@@ -88,7 +97,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    background: linear-gradient(135deg, #2eacb3, #2eacb3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,7 +113,7 @@
     color: #666;
 }
 .birthday-badge{
-    background: #ff6b6b;
+    background: #2eacb3;
     color: white;
     padding: 4px 8px;
     border-radius: 12px;

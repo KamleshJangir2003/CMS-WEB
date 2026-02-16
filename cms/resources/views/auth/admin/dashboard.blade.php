@@ -113,6 +113,349 @@
     }
 }
 </style>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f0f2f5 0%, #e6e9f0 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        /* Main Card */
+        .employee-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            width: 100%;
+            max-width: 400px;
+            border-radius: 32px;
+            box-shadow: 
+                0 20px 35px -8px rgba(0, 0, 0, 0.2),
+                0 8px 18px -6px rgba(0, 0, 0, 0.1),
+                inset 0 1px 1px rgba(255, 255, 255, 0.7);
+            padding: 28px 24px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: transform 0.2s ease;
+        }
+
+        .employee-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 40px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Header */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #eaeef5;
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e2b3c;
+            letter-spacing: -0.3px;
+        }
+
+        .icon-badge {
+            background: #1e3a5f;
+            color: white;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 10px rgba(0, 50, 100, 0.2);
+        }
+
+        /* Row styling */
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 10px 0;
+            border-bottom: 1px dashed #d0d9e8;
+        }
+
+        .info-row:last-of-type {
+            border-bottom: none;
+        }
+
+        .label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #3d4e66;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .label span {
+            font-size: 1.2rem;
+        }
+
+        .value {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0b1f33;
+        }
+
+        .value small {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: #5e6f88;
+            margin-left: 5px;
+        }
+
+        /* Total row special */
+        .total-row {
+            background: #f4f7fd;
+            margin: 4px 0 12px 0;
+            padding: 14px 16px;
+            border-radius: 24px;
+            border: 1px solid #cfdcec;
+        }
+
+        .total-row .label {
+            font-weight: 600;
+            color: #022b49;
+        }
+
+        .total-row .value {
+            font-size: 1.8rem;
+            color: #003057;
+        }
+
+        /* Progress bar mini */
+        .progress-section {
+            margin: 18px 0 8px 0;
+            background: #ecf1f7;
+            border-radius: 30px;
+            padding: 12px 15px;
+        }
+
+        .progress-item {
+            margin-bottom: 12px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .progress-bar-bg {
+            width: 100%;
+            height: 8px;
+            background: #dbe1ec;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .progress-fill-male {
+            height: 8px;
+            width: 73%;
+            background: linear-gradient(90deg, #2563eb, #3898ff);
+            border-radius: 30px;
+        }
+
+        .progress-fill-female {
+            height: 8px;
+            width: 23%;
+            background: linear-gradient(90deg, #d43f8d, #f472b6);
+            border-radius: 30px;
+        }
+
+        /* Footer summary */
+        .footer-note {
+            background: #e9edf4;
+            text-align: center;
+            padding: 12px;
+            border-radius: 40px;
+            margin-top: 20px;
+            font-size: 0.95rem;
+            color: #1f3a5f;
+            font-weight: 500;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .footer-note strong {
+            font-weight: 700;
+            color: #0e2b4b;
+        }
+
+        /* Responsive */
+        @media (max-width: 450px) {
+            .employee-card {
+                padding: 20px 16px;
+            }
+            .card-header h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+    <style>
+        /* ===============================
+   TABLE CARD DESIGN
+================================ */
+
+.table-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: none;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+/* Header */
+.table-card .card-header {
+   
+    border-bottom: 1px solid #f1f1f1;
+    background: #ffffff;
+}
+
+.table-card .card-header h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Table */
+.table-card table {
+    margin-bottom: 0;
+}
+
+.table-card thead {
+    background: #f8f9fc;
+}
+
+.table-card thead th {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #666;
+    font-weight: 600;
+    
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Table Body */
+.table-card tbody td {
+    
+    font-size: 14px;
+    color: #444;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.table-card tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Row Hover */
+.table-card tbody tr {
+    transition: 0.2s ease;
+}
+
+.table-card tbody tr:hover {
+    background: #f4f7ff;
+    transform: scale(1.002);
+}
+
+/* ===============================
+   CONTACT BUTTON STYLE
+================================ */
+
+.table-card .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-card .btn-success {
+    background: #1cc88a;
+    border: none;
+}
+
+.table-card .btn-success:hover {
+    background: #17a673;
+}
+
+.table-card .btn-primary {
+    background: #4e73df;
+    border: none;
+}
+
+.table-card .btn-primary:hover {
+    background: #2e59d9;
+}
+
+/* ===============================
+   RESPONSIVE IMPROVEMENT
+================================ */
+
+@media (max-width: 768px) {
+    .table-card thead {
+        display: none;
+    }
+
+    .table-card table,
+    .table-card tbody,
+    .table-card tr,
+    .table-card td {
+        display: block;
+        width: 100%;
+    }
+
+    .table-card tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .table-card td {
+       
+        text-align: right;
+        position: relative;
+    }
+
+    .table-card td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: 600;
+        text-align: left;
+        color: #666;
+    }
+}
+
+
+.male-all-employee{
+    display: flex;
+    height: 550px;
+}
+
+.table-card{
+    margin-left: 50px;
+}
+    </style>
 
 <div class="dashboard-wrapper">
 
@@ -342,7 +685,209 @@
             </div>
         </div>
     </div>
+    <!---employee male - female--->
+    <div class="male-all-employee">
+    <div class="employee-card">
+        
+        <!-- Header -->
+        <div class="card-header">
+            <div class="icon-badge">👥</div>
+            <h2>Employee Structure</h2>
+        </div>
 
+        <!-- Total row (highlighted) -->
+        <div class="info-row total-row">
+            <span class="label">📋 Total</span>
+            <span class="value">{{ $stats['totalHiredEmployees'] ?? 0 }}</span>
+        </div>
+
+        <!-- Male -->
+        <div class="info-row">
+            <span class="label"><span>♂️</span> Male</span>
+            <span class="value">{{ $stats['malePercentage'] ?? 0 }}% <small>({{ $stats['maleEmployees'] ?? 0 }})</small></span>
+        </div>
+
+        <!-- Female -->
+        <div class="info-row">
+            <span class="label"><span>♀️</span> Female</span>
+            <span class="value">{{ $stats['femalePercentage'] ?? 0 }}% <small>({{ $stats['femaleEmployees'] ?? 0 }})</small></span>
+        </div>
+
+        <!-- Visual progress bars (extra, but keeps UI rich) -->
+        <div class="progress-section">
+            <div class="progress-item">
+                <div class="progress-header">
+                    <span>👨 Male</span>
+                    <span>{{ $stats['malePercentage'] ?? 0 }}%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-fill-male" style="width: {{ $stats['malePercentage'] ?? 0 }}%;"></div>
+                </div>
+            </div>
+            <div class="progress-item">
+                <div class="progress-header">
+                    <span>👩 Female</span>
+                    <span>{{ $stats['femalePercentage'] ?? 0 }}%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-fill-female" style="width: {{ $stats['femalePercentage'] ?? 0 }}%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary footer -->
+        <div class="footer-note">
+            👤 <strong>{{ $stats['maleEmployees'] ?? 0 }} Male</strong> · <strong>{{ $stats['femaleEmployees'] ?? 0 }} Female</strong> · Total {{ $stats['totalHiredEmployees'] ?? 0 }}
+        </div>
+
+    </div>
+    
+    <!-- 🔹 All Employees Table -->
+    @if(isset($allEmployees) && $allEmployees->count() > 0)
+
+<style>
+/* Scroll Wrapper */
+.employee-table-wrapper {
+    max-height: 400px; /* Height control yaha se */
+    overflow-y: auto;
+}
+
+/* Sticky Header */
+.employee-table-wrapper thead th {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 2;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+}
+
+/* Name wrap fix */
+.table td {
+    white-space: nowrap;
+}
+
+/* Search box styling */
+.employee-search {
+    max-width: 250px;
+}
+
+/* Smooth scrollbar */
+.employee-table-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.employee-table-wrapper::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 10px;
+}
+</style>
+
+
+<div class="card table-card mb-4 shadow-sm">
+    
+    <!-- Header -->
+    <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+        
+        <h5 class="mb-0 fw-semibold">
+            👥 All Employees ({{ $allEmployees->count() }})
+        </h5>
+
+        <!-- Search -->
+        <input type="text"
+               id="employeeSearch"
+               class="form-control form-control-sm employee-search"
+               placeholder="🔍 Search employee...">
+    </div>
+
+
+    <!-- Table -->
+    <div class="card-body p-0">
+        <div class="table-responsive employee-table-wrapper">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th class="text-center">Contact</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTableBody">
+                    
+                    @foreach($allEmployees as $employee)
+                    <tr>
+                        <td>
+                            <strong>
+                                {{ $employee->first_name }} {{ $employee->last_name }}
+                            </strong>
+                        </td>
+
+                        <td>
+                            {{ $employee->department ?? 'N/A' }}
+                        </td>
+
+                        <td class="text-center">
+                            
+                            @if($employee->phone)
+                            <a href="tel:{{ $employee->phone }}"
+                               class="btn btn-sm btn-success me-1"
+                               title="Call">
+                                <i class="bi bi-telephone-fill"></i>
+                            </a>
+                            @endif
+
+                            @if($employee->email)
+                            <a href="mailto:{{ $employee->email }}"
+                               class="btn btn-sm btn-primary me-1"
+                               title="Email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                            @endif
+
+                            @if($employee->phone)
+                            <a href="https://wa.me/{{ preg_replace('/[^0-9]/', '', $employee->phone) }}"
+                               target="_blank"
+                               class="btn btn-sm btn-success"
+                               title="WhatsApp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            @endif
+
+                        </td>
+                    </tr>
+                    @endforeach
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Live Search Script -->
+<script>
+document.getElementById("employeeSearch").addEventListener("keyup", function () {
+
+    let value = this.value.toLowerCase();
+    let rows = document.querySelectorAll("#employeeTableBody tr");
+
+    rows.forEach(function (row) {
+
+        let name = row.cells[0].innerText.toLowerCase();
+        let department = row.cells[1].innerText.toLowerCase();
+
+        if (name.includes(value) || department.includes(value)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+
+});
+</script>
+
+@endif
+
+    </div>
     <!-- 🔹 Pending Approvals Table -->
     @if(isset($pendingUsers) && $pendingUsers->count() > 0)
     <div class="card table-card mb-4">
