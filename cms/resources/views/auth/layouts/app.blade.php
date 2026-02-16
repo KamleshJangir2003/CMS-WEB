@@ -29,6 +29,24 @@ table th {
     position: relative !important;
     display: inline-block !important;
 }
+
+/* Fix sidebar overlap issue globally */
+.modal {
+    z-index: 99999 !important;
+}
+
+.modal-backdrop {
+    z-index: 99998 !important;
+}
+
+/* Important for Mega Able type layouts */
+.page-wrapper,
+.pcoded-main-container,
+.main-content,
+.container-fluid {
+    transform: none !important;
+}
+
 </style>
 
 </head>
@@ -66,6 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Move ALL modals to body to prevent sidebar overlap
+    document.querySelectorAll('.modal').forEach(function(modal){
+        document.body.appendChild(modal);
+    });
+
+});
+</script>
+
 
 </body>
 </html>

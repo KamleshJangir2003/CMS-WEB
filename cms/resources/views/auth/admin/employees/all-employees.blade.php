@@ -25,26 +25,13 @@
     border-radius: 8px;
 }
 
-/* Modal Fix */
-.emp-email-modal {
-    z-index: 1050 !important;
+
+.modal {
+    z-index: 99999 !important;
 }
 
-.emp-email-modal-backdrop {
-    z-index: 1040 !important;
-}
-
-.emp-email-modal-content {
-    z-index: 1060 !important;
-}
-
-/* Fix for backdrop opacity issue */
-.emp-email-modal-backdrop.show {
-    opacity: 0.5 !important;
-}
-
-.emp-email-modal-backdrop.fade {
-    opacity: 0.5 !important;
+.modal-backdrop {
+    z-index: 99998 !important;
 }
 
 </style>
@@ -97,14 +84,14 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade emp-email-modal"
+<div class="modal fade"
      id="empComposeModal"
      tabindex="-1"
      aria-labelledby="empComposeModalLabel"
      aria-hidden="true">
 
     <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content emp-email-modal-content">
+        <div class="modal-content">
 
             <div class="modal-header">
                 <h5 class="modal-title" id="empComposeModalLabel">Compose Mail</h5>
@@ -162,6 +149,15 @@
         </div>
     </div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById('empComposeModal');
+    if (modal) {
+        document.body.appendChild(modal);
+    }
+});
+</script>
+
 
 <script>
 function updateSelection() {
@@ -172,9 +168,8 @@ function updateSelection() {
     const emailsInput = document.getElementById('empEmailsInput');
 
     if (selected.length > 0) {
-
         mailActions.classList.remove('d-none');
-        selectedCount.innerText = selected.length + " employee selected";
+        selectedCount.innerText = selected.length + (selected.length === 1 ? " employee selected" : " employees selected");
 
         let html = '';
         let emails = [];
@@ -186,7 +181,6 @@ function updateSelection() {
 
         selectedEmails.innerHTML = html;
         emailsInput.value = emails.join(',');
-
     } else {
         mailActions.classList.add('d-none');
         selectedEmails.innerHTML = '';
@@ -197,21 +191,14 @@ function updateSelection() {
 function selectAll() {
     const checkboxes = document.querySelectorAll('.emp-checkbox');
     const allChecked = Array.from(checkboxes).every(cb => cb.checked);
-
     checkboxes.forEach(cb => cb.checked = !allChecked);
     updateSelection();
 }
 
-document.querySelectorAll('.emp-checkbox')
-    .forEach(cb => cb.addEventListener('change', updateSelection));
-</script>
-<script>
-// Simple modal fix
 document.addEventListener('DOMContentLoaded', function() {
-    // Clean up any leftover backdrops on page load
-    document.querySelectorAll('.emp-email-modal-backdrop').forEach(el => el.remove());
-    document.body.classList.remove('modal-open');
-    document.body.style.overflow = '';
+    document.querySelectorAll('.emp-checkbox').forEach(cb => {
+        cb.addEventListener('change', updateSelection);
+    });
 });
 </script>
 
