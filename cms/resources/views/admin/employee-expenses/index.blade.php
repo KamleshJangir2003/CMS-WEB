@@ -4,6 +4,54 @@
         padding-left: 130px;
         padding-top: 80px;
     }
+    
+    /* Mobile Employee Expenses Page Responsive */
+    @media (max-width: 768px) {
+        .main-content {
+            padding-left: 15px !important;
+            padding-top: 70px;
+        }
+        
+        .stats-card .card-body {
+            padding: 10px;
+        }
+        
+        .stats-card h3 {
+            font-size: 16px;
+        }
+        
+        .stats-card h6 {
+            font-size: 10px;
+        }
+        
+        .stats-card i {
+            font-size: 18px !important;
+        }
+        
+        .btn-group .btn {
+            font-size: 9px;
+            padding: 3px 6px;
+        }
+        
+        .table th,
+        .table td {
+            font-size: 9px;
+            padding: 3px 2px;
+        }
+        
+        .badge {
+            font-size: 7px;
+        }
+        
+        .btn-sm {
+            font-size: 8px;
+            padding: 2px 3px;
+        }
+        
+        .modal-body {
+            font-size: 11px;
+        }
+    }
 </style>
 @section('title', 'Employee Expenses')
 @section('page-title', 'Employee Expense Management')

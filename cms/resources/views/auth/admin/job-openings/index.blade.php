@@ -7,6 +7,49 @@
     margin-left: 130px;
     margin-top: 60px;
 }
+
+/* Mobile Job Openings Page Responsive */
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        margin-left: 0 !important;
+        margin-top: 70px;
+        padding: 15px;
+    }
+    
+    .job-card {
+        margin-bottom: 15px;
+    }
+    
+    .job-card .card-body {
+        padding: 12px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+    
+    .status-badge {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+    
+    .badge {
+        font-size: 9px;
+    }
+    
+    .btn-sm {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+    
+    .btn-sm i {
+        font-size: 9px;
+    }
+    
+    .text-muted {
+        font-size: 11px;
+    }
+}
 .job-card {
     border-radius: 12px;
     border: none;

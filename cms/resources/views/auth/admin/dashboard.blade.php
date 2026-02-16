@@ -10,6 +10,45 @@
     margin-left: 130px;
     margin-top: 60px;
 }
+
+/* Mobile Dashboard Responsive */
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        margin-left: 0 !important;
+        margin-top: 70px;
+        padding: 15px;
+    }
+    
+    .stat-card {
+        min-height: 100px;
+    }
+    
+    .stat-number {
+        font-size: 24px !important;
+    }
+    
+    .stat-title {
+        font-size: 12px;
+    }
+    
+    .alert {
+        padding: 12px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .alert h5 {
+        font-size: 16px;
+    }
+    
+    .table-responsive {
+        font-size: 12px;
+    }
+    
+    .btn-sm {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
 .stat-card{
     border: none;
     border-radius: 14px;

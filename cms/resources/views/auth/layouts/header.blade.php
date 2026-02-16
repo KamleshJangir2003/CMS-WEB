@@ -46,9 +46,11 @@
     padding: 8px;
     border-radius: 6px;
     transition: background 0.2s;
+    display: none; /* Hidden by default, shown in mobile via media query */
 }
 
-.header-icon:hover{
+.header-icon:hover,
+.menu-btn:hover{
     background: #f3f4f6;
 }
 
@@ -713,10 +715,10 @@ function showStatusPopup(type, title, message, details = null) {
 
 <header class="top-header">
     <div class="header-left">
-        <!-- MENU -->
-        <!-- <button class="menu-btn" id="menuToggle">
+        <!-- MOBILE MENU BUTTON -->
+        <button class="menu-btn" id="menuToggle">
             <i class="fa-solid fa-bars"></i>
-        </button> -->
+        </button>
 
         <!-- EXCEL UPLOAD -->
         <div class="dropdown">

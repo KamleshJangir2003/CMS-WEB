@@ -13,6 +13,52 @@
     margin-top: 80px;
 }
 
+/* Mobile HR Notes Page Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 15px !important;
+        margin-top: 70px;
+    }
+    
+    .page-content,
+    .container-fluid {
+        padding: 10px;
+    }
+    
+    .card-body {
+        padding: 12px;
+    }
+    
+    .form-control,
+    .form-select {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    
+    .form-label {
+        font-size: 11px;
+    }
+    
+    .table th,
+    .table td {
+        font-size: 10px;
+        padding: 4px 2px;
+    }
+    
+    .badge {
+        font-size: 8px;
+    }
+    
+    .btn-sm {
+        font-size: 9px;
+        padding: 2px 4px;
+    }
+    
+    .breadcrumb {
+        font-size: 10px;
+    }
+}
+
 /* ===== PAGE CONTENT PROPER SPACING ===== */
 .page-content,
 .container-fluid {

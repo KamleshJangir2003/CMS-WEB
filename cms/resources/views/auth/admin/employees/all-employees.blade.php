@@ -9,6 +9,48 @@
     margin-top: 60px;
 }
 
+/* Mobile All Employees Page Responsive */
+@media (max-width: 768px) {
+    .emp-email-wrapper {
+        margin-left: 0 !important;
+        margin-top: 70px;
+        padding: 15px;
+    }
+    
+    .emp-email-card {
+        margin-bottom: 10px;
+    }
+    
+    .emp-email-card .card-body {
+        padding: 12px;
+    }
+    
+    .form-check-label {
+        font-size: 14px;
+    }
+    
+    .text-muted {
+        font-size: 12px;
+    }
+    
+    .badge {
+        font-size: 10px;
+    }
+    
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+    
+    #empSelectedEmails .badge {
+        font-size: 9px;
+        margin: 2px;
+    }
+}
+
 .emp-email-card {
     border-radius: 12px;
     border: 1px solid #e3e6f0;

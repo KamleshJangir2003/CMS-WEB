@@ -9,6 +9,50 @@
     margin-top: 80px;
 }
 
+/* Mobile Bills Page Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 15px !important;
+        margin-top: 70px;
+    }
+    
+    .page-title {
+        font-size: 18px;
+    }
+    
+    .card-header h5 {
+        font-size: 16px;
+    }
+    
+    .form-label {
+        font-size: 12px;
+    }
+    
+    .form-control {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+    
+    .table th,
+    .table td {
+        font-size: 10px;
+        padding: 4px 2px;
+    }
+    
+    .badge {
+        font-size: 9px;
+    }
+    
+    .btn-sm {
+        font-size: 9px;
+        padding: 3px 5px;
+    }
+    
+    .btn-sm i {
+        font-size: 8px;
+    }
+}
+
 </style>
 @section('content')
 <div class="container-fluid">

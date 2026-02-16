@@ -10,6 +10,55 @@
     margin-left: 130px;
     margin-top: 60px;
 }
+
+/* Mobile Birthday Page Responsive */
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        margin-left: 0 !important;
+        margin-top: 70px;
+        padding: 15px;
+    }
+    
+    .birthday-header {
+        padding: 15px;
+    }
+    
+    .birthday-header h4 {
+        font-size: 16px;
+    }
+    
+    .birthday-item {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+    
+    .birthday-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .birthday-info h6 {
+        font-size: 14px;
+    }
+    
+    .birthday-info small {
+        font-size: 11px;
+    }
+    
+    .month-header {
+        padding: 10px 15px;
+    }
+    
+    .month-header h5 {
+        font-size: 16px;
+    }
+    
+    .birthday-badge {
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+}
 .birthday-card{
     border: none;
     border-radius: 14px;

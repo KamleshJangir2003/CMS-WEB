@@ -9,6 +9,56 @@
     transition: margin-left 0.3s ease;
     margin-top: 80px;
 }
+
+/* Mobile Tickets Page Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        padding-left: 15px !important;
+        margin-top: 70px;
+    }
+    
+    .card-title {
+        font-size: 14px;
+    }
+    
+    .card-body h3 {
+        font-size: 20px;
+    }
+    
+    .card-body h5 {
+        font-size: 12px;
+    }
+    
+    .table th,
+    .table td {
+        font-size: 9px;
+        padding: 3px 2px;
+    }
+    
+    .badge {
+        font-size: 7px;
+        padding: 2px 4px;
+    }
+    
+    .btn-sm {
+        font-size: 8px;
+        padding: 2px 4px;
+    }
+    
+    .btn-sm i {
+        font-size: 7px;
+    }
+    
+    .modal-body {
+        font-size: 12px;
+    }
+    
+    .form-control,
+    .form-select {
+        font-size: 11px;
+        padding: 5px 6px;
+    }
+}
 </style>
 
 @section('content')

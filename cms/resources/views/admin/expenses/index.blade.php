@@ -5,6 +5,55 @@
         padding-left: 130px;
         padding-top: 80px;
     }
+    
+    /* Mobile Expenses Page Responsive */
+    @media (max-width: 768px) {
+        .main-content {
+            padding-left: 15px !important;
+            padding-top: 70px;
+        }
+        
+        .stats-card .card-body {
+            padding: 12px;
+        }
+        
+        .stats-card h3 {
+            font-size: 18px;
+        }
+        
+        .stats-card h6 {
+            font-size: 11px;
+        }
+        
+        .stats-card i {
+            font-size: 20px !important;
+        }
+        
+        .table th,
+        .table td {
+            font-size: 10px;
+            padding: 4px 2px;
+        }
+        
+        .badge {
+            font-size: 8px;
+        }
+        
+        .btn-sm {
+            font-size: 9px;
+            padding: 2px 4px;
+        }
+        
+        .form-control,
+        .form-select {
+            font-size: 12px;
+            padding: 6px 8px;
+        }
+        
+        .form-label {
+            font-size: 11px;
+        }
+    }
 </style>
 @section('title', 'Admin Expenses')
 @section('page-title', 'Expense Management')
@@ -20,8 +69,8 @@
 
     <div class="row mb-4">
         <div class="col-md-8">
-            <h4>Admin Expense Management</h4>
-            <p class="text-muted">Manage office and business expenses</p>
+                <!-- <h4>Admin Expense Management</h4>
+                <p class="text-muted">Manage office and business expenses</p> -->
         </div>
         <div class="col-md-4 text-end">
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addExpenseModal">
